@@ -1,14 +1,17 @@
 import React from 'react';
 import { CgDarkMode } from 'react-icons/cg';
 
-export function NavBar({ darkMood, logo }) {
+export function NavBar({ darkMood, logo, setDarkMood }) {
   const navList = ['Learn more', 'Team', 'Contact us'];
+  const switchMood = () => {
+    darkMood ? setDarkMood(false) : setDarkMood(true);
+  };
   return (
     <div className={darkMood ? 'dark' : ''}>
-      <nav className='bg-white border-gray-400 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800'>
+      <nav className='bg-white border-gray-400 px-2 sm:px-4 py-2.5 dark:bg-gray-800'>
         <div className='container flex flex-wrap items-center  justify-between  mx-auto'>
           <div className='flex space-x-4'>
-            <a href='https://flowbite.com/' className='flex items-center'>
+            <a href='#' className='flex items-center'>
               <img src={logo} className='mr-3 h-6 sm:h-9' alt='SpotXLogo' />
               <span className='self-center text-xl font-semibold whitespace-nowrap dark:text-white'>
                 SpotX
@@ -20,7 +23,7 @@ export function NavBar({ darkMood, logo }) {
               <li>
                 <a
                   href='#'
-                  className='block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white'
+                  className='block py-2 pr-4 pl-3 text-white bg-green-400 rounded md:bg-transparent md:text-green-700 md:p-0 dark:text-white'
                   aria-current='page'>
                   Home
                 </a>
@@ -38,7 +41,7 @@ export function NavBar({ darkMood, logo }) {
             </ul>
           </div>
           <div>
-            <CgDarkMode />
+            <CgDarkMode onClick={() => switchMood()} size={30} />
           </div>
         </div>
       </nav>
