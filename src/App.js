@@ -1,24 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import { NavBar } from './NavBar';
+import logo from './logo.png';
+import React, { useState } from 'react';
 
 function App() {
+  const [darkMood, setDarkMood] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavBar darkMood={darkMood} logo={logo} />
+      <div className='bg-green-600 h-screen body'>
+        <h2>Body Starts However</h2>
+      </div>
+    </>
   );
 }
 
