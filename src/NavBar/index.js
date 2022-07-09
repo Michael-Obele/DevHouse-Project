@@ -1,7 +1,8 @@
 import React from 'react';
+import logo from './logo.png';
 import { CgDarkMode } from 'react-icons/cg';
 
-export function NavBar({ darkMood, logo, setDarkMood }) {
+export function NavBar({ darkMood, setDarkMood }) {
   const navList = ['Learn more', 'Team', 'Contact us'];
   const switchMood = () => {
     darkMood ? setDarkMood(false) : setDarkMood(true);
@@ -41,7 +42,11 @@ export function NavBar({ darkMood, logo, setDarkMood }) {
             </ul>
           </div>
           <div>
-            <CgDarkMode onClick={() => switchMood()} size={30} />
+            <CgDarkMode
+              className='cursor-pointer dark:text-green-300'
+              onClick={() => switchMood()}
+              size={30}
+            />
           </div>
         </div>
       </nav>
