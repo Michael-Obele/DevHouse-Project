@@ -2,21 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400&display=swap');
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Manrope', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 /* Body CSS */
 :root {
   --blue: #1e90ff;
@@ -35,8 +29,8 @@ code {
   background-repeat: no-repeat;
 }
 .bg-light h1 {
-  font-family: 'Manrope', sans-serif;
   font-size: calc(24px + (64 - 24) * ((100vw - 300px) / (1600 - 300)));
+  font-weight: 700;
   color: #2941ab;
   line-height: 87.42px;
 }
@@ -45,8 +39,8 @@ code {
   width: calc(28vw + (30 - 28) * ((100vw - 300px) / (1600 - 300)));
   /* width: 30vw; */
 }
-.under {
-  left: 9rem;
+.bg-m-blue {
+  background-color: #0e173c;
 }
 
 #box {
@@ -60,11 +54,8 @@ code {
   padding: 0px 64px 0px 45px;
   gap: 45px;
 
-  /* position: absolute; */
   width: 16px;
   height: 30px;
-  /* left: 379px;
-  top: 188px; */
 
   background: linear-gradient(180deg, #1f3180 0%, rgba(31, 49, 128, 0) 100%);
   /* Foundation /Green/Normal */
