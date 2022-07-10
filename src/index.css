@@ -11,37 +11,31 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Body CSS */
+/* My color scheme */
 :root {
   --blue: #1e90ff;
   --white: #ffffff;
   --green-primary: #1ed760;
+  --green-secondary: #00bfa5;
 }
-.bg-m-g {
-  background-color: var(--green-primary);
-}
+
 .bg-light {
-  background-color: var(--green-primary);
   background-image: url(./bBox.png), url(./bBox.png), url(./bBox.png),
     url(./hBox.png);
   background-position: 12vw 90px, right 40vw top 8vw, right 3em bottom 18vw,
     left -23px bottom 90px;
   background-repeat: no-repeat;
 }
+/* My color scheme */
+/* Body CSS */
+/* To be converted to tailwind */
 .bg-light h1 {
   font-size: calc(24px + (64 - 24) * ((100vw - 300px) / (1600 - 300)));
   font-weight: 700;
   color: #2941ab;
   line-height: 87.42px;
 }
-
-.listen {
-  width: calc(28vw + (30 - 28) * ((100vw - 300px) / (1600 - 300)));
-  /* width: 30vw; */
-}
-.bg-m-blue {
-  background-color: #0e173c;
-}
+/* Body CSS */
 
 #box {
   box-sizing: border-box;
@@ -64,3 +58,33 @@ body {
   border-radius: 32px;
 }
 /* Body CSS */
+/* Second Body */
+.line-1 {
+  border-right: 3px solid rgba(255, 255, 255, 0.75);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 4s steps(14) 1.5s 1 normal both,
+    blinkTextCursor 500ms steps(13) infinite normal;
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 18rem;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+/* Second Body */
