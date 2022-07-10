@@ -12,7 +12,7 @@ export function Here({}) {
         <h1>everything now</h1>
       </div>
       <div className='bg-[#1ed760] rounded-l-3xl border-transparent absolute bottom-60 md:left-40 left-[4rem] box-border h-24 w-1/2 pl-2.5  border-4 z-[2]'>
-        <p className='text-justify font-normal text-[calc(12px+(8-12)*((100vw-300px)/(1600-300)))] h-fit w-fit'>
+        <p className='text-justify font-normal text-[calc(14px+(10-14)*((100vw-400px)/(1600-300)))] h-fit w-fit'>
           There is more, you can now buy shares of songs from spotify using our
           smarts contracts and that's all you will ever need to begin
         </p>
