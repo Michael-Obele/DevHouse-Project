@@ -11,7 +11,7 @@ function App() {
       <Here />
       <div className='bg-[#000812] h-screen body'>
         <div className='p-10'>
-          <p className='text-center text-white text-xl font-bold my-0 mx-auto py-4 text-[36px] line-1 anim-typewriter'>
+          <p className='text-center text-white text-xl font-bold my-0 mx-auto py-4 text-[36px] border-r-2 border-white line-1 anim-typewriter'>
             Our Mechanism
           </p>
         </div>

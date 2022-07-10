@@ -60,7 +60,6 @@ body {
 /* Body CSS */
 /* Second Body */
 .line-1 {
-  border-right: 3px solid rgba(255, 255, 255, 0.75);
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
