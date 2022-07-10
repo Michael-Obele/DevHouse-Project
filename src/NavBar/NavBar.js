@@ -1,6 +1,5 @@
 import React from 'react';
 import logo from './logo.png';
-import { CgDarkMode } from 'react-icons/cg';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
 
 export function NavBar({ darkMood, setDarkMood }) {

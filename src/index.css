@@ -14,8 +14,8 @@ body {
 /* Background */
 
 .bg-light {
-  background-image: url(./bBox.png), url(./bBox.png), url(./bBox.png),
-    url(./hBox.png);
+  background-image: url(./Images/bBox.png), url(./Images/bBox.png),
+    url(./Images/bBox.png), url(./Images/hBox.png);
   background-position: 12vw 90px, right 40vw top 8vw, right 3em bottom 18vw,
     left -23px bottom 90px;
   background-repeat: no-repeat;
@@ -65,9 +65,19 @@ body {
   overflow: hidden;
 }
 
+.line-2 {
+  width: 0px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 /* Animation */
+.anim-blink {
+  animation: blinkTextCursor 500ms infinite normal;
+}
 .anim-typewriter {
-  animation: typewriter 4s steps(13) 1.5s 1 normal both,
+  animation: typewriter 4s steps(13, end) 1.5s 1 normal both,
     blinkTextCursor 500ms steps(13) infinite normal;
 }
 @keyframes typewriter {
