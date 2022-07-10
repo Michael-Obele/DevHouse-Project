@@ -11,13 +11,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* My color scheme */
-:root {
-  --blue: #1e90ff;
-  --white: #ffffff;
-  --green-primary: #1ed760;
-  --green-secondary: #00bfa5;
-}
+/* Background */
 
 .bg-light {
   background-image: url(./bBox.png), url(./bBox.png), url(./bBox.png),
@@ -26,14 +20,20 @@ body {
     left -23px bottom 90px;
   background-repeat: no-repeat;
 }
-/* My color scheme */
+/* Background */
+
 /* Body CSS */
-/* To be converted to tailwind */
-.bg-light h1 {
+
+/* Calc Styles */
+.h1-calc {
   font-size: calc(24px + (64 - 24) * ((100vw - 300px) / (1600 - 300)));
-  font-weight: 700;
-  color: #2941ab;
-  line-height: 87.42px;
+}
+.p-calc {
+  font-size: calc(13px + (24 - 13) * ((100vw - 400px) / (1600 - 300)));
+}
+
+.l-calc {
+  left: calc(28vw + (30 - 28) * ((100vw - 300px) / (1600 - 300)));
 }
 /* Body CSS */
 
