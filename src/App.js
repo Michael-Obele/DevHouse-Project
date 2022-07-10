@@ -1,7 +1,7 @@
 import { Here } from './Here_Section/Here';
 import React, { useState } from 'react';
 import './index.css';
-import { NavBar } from './NavBar';
+import { NavBar } from './NavBar/NavBar';
 
 function App() {
   const [darkMood, setDarkMood] = useState(false);

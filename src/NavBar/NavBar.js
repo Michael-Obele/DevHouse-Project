@@ -1,11 +1,16 @@
 import React from 'react';
 import logo from './logo.png';
 import { CgDarkMode } from 'react-icons/cg';
+import { DarkModeSwitch } from 'react-toggle-dark-mode';
 
 export function NavBar({ darkMood, setDarkMood }) {
   const navList = ['Learn more', 'Team', 'Contact us'];
   const switchMood = () => {
     darkMood ? setDarkMood(false) : setDarkMood(true);
+  };
+
+  const toggleDarkMode = (checked) => {
+    setDarkMood(checked);
   };
   return (
     <div className={darkMood ? 'dark' : ''}>
@@ -41,11 +46,16 @@ export function NavBar({ darkMood, setDarkMood }) {
               ))}
             </ul>
           </div>
-          <div>
-            <CgDarkMode
-              className='cursor-pointer dark:text-green-300'
+          <div className='flex justify-x  md:flex-row md:space-x-8'>
+            <button className='bg-[#000812] rounded-lg border-transparent box-border h-fit w-fit my-auto p-2 border-4 cursor-pointer text-white'>
+              Connect Wallet
+            </button>
+            <DarkModeSwitch
+              className='cursor-pointer ml-2 my-auto dark:text-green-300'
               onClick={() => switchMood()}
-              size={30}
+              checked={darkMood}
+              onChange={toggleDarkMode}
+              size={40}
             />
           </div>
         </div>
