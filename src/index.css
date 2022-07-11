@@ -16,8 +16,8 @@ body {
 .bg-light {
   background-image: url(./Images/bBox.png), url(./Images/bBox.png),
     url(./Images/bBox.png), url(./Images/hBox.png);
-  background-position: 12vw 90px, right 40vw top 8vw, right 3em bottom 18vw,
-    left -23px bottom 90px;
+  background-position: 22.27% 8.5%, right 40% top 28%, right 4.48% bottom 38%,
+    left -2.99% bottom 6.05%;
   background-repeat: no-repeat;
 }
 /* Background */
@@ -95,5 +95,9 @@ body {
   to {
     border-right-color: transparent;
   }
+}
+
+.box-g {
+  background: linear-gradient(180deg, #1f3180 0%, rgba(31, 49, 128, 0) 100%);
 }
 /* Second Body */

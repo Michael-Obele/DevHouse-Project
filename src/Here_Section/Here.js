@@ -15,16 +15,15 @@ export function Here({}) {
           everything now
         </h1>
       </div>
-      <div className='bg-[#1ed760] rounded-l-3xl border-transparent absolute bottom-60 md:left-40 left-[4rem] box-border md:pt-3 lg:pt-0 h-24 w-1/2 pl-2.5  border-4 z-[2]'>
+      <div className='bg-[#1ed760] rounded-l-3xl border-l-[5px] border-l-[#0e173c] border-r-0 border-y-0  absolute bottom-[9rem] 2xl:bottom-[20rem] lg:bottom-40 xl:left-60 md:left-40 left-[4rem] box-border md:pt-3 lg:pt-0 h-24 w-1/2 pl-2.5  border-4'>
         <p className='text-justify font-normal p-calc h-fit w-fit leading-4 md:leading-5 lg:leading-8'>
           There is more, you can now buy shares of songs from spotify using our
           smarts contracts and that's all you will ever need to begin
         </p>
+        <button className='bg-[#0e173c] rounded-lg border-transparent mx-3 p-2 box-border h-fit lg:w-fit lg:p-4 border-4 l-calc cursor-pointer shadow-[0px_0px_41px_4px_#000812] text-white z-[2]'>
+          Explore Shares Now
+        </button>
       </div>
-      <div className='bg-[#0e173c] rounded-bl-3xl rounded-tl-3xl border-transparent absolute bottom-60 box-border h-24 w-1/2 p-4 border-4 z-0 md:left-[9.5rem] left-[3.5rem]'></div>
-      <button className='bg-[#0e173c] rounded-lg border-transparent absolute bottom-[6rem] lg:bottom-[9rem] box-border h-fit w-fit p-4 border-4 l-calc cursor-pointer shadow-[0px_0px_41px_4px_#000812] text-white z-[4]'>
-        Explore Shares Now
-      </button>
     </div>
   );
 }
