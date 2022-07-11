@@ -17,7 +17,8 @@ function App() {
     <>
       <NavBar darkMood={darkMood} setDarkMood={setDarkMood} />
       <Here />
-      <section className='bg-[#000812] relative pb-[500rem]'>
+      <section className='bg-[#000812] relative pb-[300rem]'>
+        {/* Typed Character */}
         <div className='p-10' ref={ref}>
           <p
             className={
@@ -28,9 +29,11 @@ function App() {
             Our Mechanism
           </p>
         </div>
+        {/* Typed Character */}
+        {/* List of Our Mechanism */}
         {InfoList.map((item, index) => (
           <div key={item.title} className={item.divClass}>
-            <item.image1 className={item.image1Class} />
+            <item.image1 className='my-[1rem] mx-[2rem]' />
             <div className='w-fit h-auto my-auto mx-[1rem]'>
               <h2 className='capitalize text-[#1ED760] font-[700] text-left mb-1'>
                 {item.h2}
@@ -39,9 +42,10 @@ function App() {
                 {item.p}
               </p>
             </div>
-            <item.image2 className={item.image2Class} />
+            <item.image2 className='mx-auto w-3/4' />
           </div>
         ))}
+        {/* List of Our Mechanism */}
       </section>
     </>
   );
