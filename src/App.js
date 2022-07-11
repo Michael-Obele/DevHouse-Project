@@ -5,6 +5,7 @@ import { NavBar } from './NavBar/NavBar';
 import { useInView } from 'react-intersection-observer';
 import { ReactComponent as One } from './SVG/1.svg';
 import { ReactComponent as OneImg } from './SVG/oneImg.svg';
+import { InfoList } from './Info';
 
 function App() {
   const [darkMood, setDarkMood] = useState(false);
@@ -16,7 +17,7 @@ function App() {
     <>
       <NavBar darkMood={darkMood} setDarkMood={setDarkMood} />
       <Here />
-      <div className='bg-[#000812] h-screen relative'>
+      <section className='bg-[#000812] relative pb-[500rem]'>
         <div className='p-10' ref={ref}>
           <p
             className={
@@ -27,17 +28,21 @@ function App() {
             Our Mechanism
           </p>
         </div>
-        <div className='box-g absolute rounded-l-3xl border-l-[5px] border-l-[#1ed760] border-r-0 border-y-0 top-40 right-0 box-border h-fit flex flex-col md:flex-row lg:h-[14rem] w-3/4 border-4 lg:justify-between'>
-          <One className=' my-[1rem] mx-[2rem]' />
-          <div className='w-fit h-auto mx-[1rem]'>
-            <h2 className='capitalize text-[#1ED760] text-left'>
-              smart contract will payout shareholders
-            </h2>
-            <p></p>
+        {InfoList.map((item, index) => (
+          <div key={item.title} className={item.divClass}>
+            <item.image1 className={item.image1Class} />
+            <div className='w-fit h-auto my-auto mx-[1rem]'>
+              <h2 className='capitalize text-[#1ED760] font-[700] text-left mb-1'>
+                {item.h2}
+              </h2>
+              <p className='text-white font-[400] lowercase text-left'>
+                {item.p}
+              </p>
+            </div>
+            <item.image2 className={item.image2Class} />
           </div>
-          <OneImg className='my-[1rem] mx-[2rem]' />
-        </div>
-      </div>
+        ))}
+      </section>
     </>
   );
 }
