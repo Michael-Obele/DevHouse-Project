@@ -3,7 +3,8 @@ import React, { useState } from 'react';
 import './index.css';
 import { NavBar } from './NavBar/NavBar';
 import { useInView } from 'react-intersection-observer';
-import One from './Images/1.png';
+import { ReactComponent as One } from './SVG/1.svg';
+import { ReactComponent as OneImg } from './SVG/oneImg.svg';
 
 function App() {
   const [darkMood, setDarkMood] = useState(false);
@@ -15,7 +16,7 @@ function App() {
     <>
       <NavBar darkMood={darkMood} setDarkMood={setDarkMood} />
       <Here />
-      <div className='bg-[#000812] h-screen body relative'>
+      <div className='bg-[#000812] h-screen relative'>
         <div className='p-10' ref={ref}>
           <p
             className={
@@ -26,12 +27,15 @@ function App() {
             Our Mechanism
           </p>
         </div>
-        <div className='box-g absolute rounded-l-3xl border-l-[5px] border-l-[#1ed760] border-r-0 border-y-0 top-40 right-0 box-border h-[14rem] w-3/4 border-4 flex justify-between'>
-          <img
-            src={One}
-            alt='One'
-            className=' my-auto mx-[2rem] h-[12rem] w-18'
-          />
+        <div className='box-g absolute rounded-l-3xl border-l-[5px] border-l-[#1ed760] border-r-0 border-y-0 top-40 right-0 box-border h-fit flex flex-col md:flex-row lg:h-[14rem] w-3/4 border-4 lg:justify-between'>
+          <One className=' my-[1rem] mx-[2rem]' />
+          <div className='w-fit h-auto mx-[1rem]'>
+            <h2 className='capitalize text-[#1ED760] text-left'>
+              smart contract will payout shareholders
+            </h2>
+            <p></p>
+          </div>
+          <OneImg className='my-[1rem] mx-[2rem]' />
         </div>
       </div>
     </>
