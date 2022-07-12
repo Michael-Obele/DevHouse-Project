@@ -65,15 +65,12 @@ body {
   overflow: hidden;
 }
 
-.line-2 {
+/* Animation */
+.anim-blink {
   width: 0px;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
-}
-
-/* Animation */
-.anim-blink {
   animation: blinkTextCursor 500ms infinite normal;
 }
 .anim-typewriter {
