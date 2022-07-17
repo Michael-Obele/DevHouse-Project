@@ -12,8 +12,14 @@ export function OurStocks({}) {
       {/* Typed Character */}
       <OurStockText />
       {/* Typed Character */}
-
       <StockNav />
+      <div className='pb-[10rem]'></div>
+      <div className='flex flex-row items-center justify-center'>
+        <span className='border-b-2 mx-2 px-[40vw] border-green-700'> {}</span>
+        <p className='bg-transparent py-auto text-gray-600 font-medium text-[1rem]'>
+          Show More
+        </p>
+      </div>
     </section>
   );
 }

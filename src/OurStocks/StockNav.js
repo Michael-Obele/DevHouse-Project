@@ -1,9 +1,10 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
+import fade from './stocksAnimation.module.css';
 
 export function StockNav({}) {
   const { ref, inView } = useInView({
-    threshold: 0.8,
+    threshold: 0,
   });
   const musicList = [
     'Reggae',
@@ -27,7 +28,7 @@ export function StockNav({}) {
           <ul
             className={
               inView
-                ? 'fade-in flex flex-col text-[1rem] font-bold mt-4 md:flex-row md:space-x-8 md:mt-0'
+                ? `${fade.fadeIn} flex flex-col text-[1rem] font-bold mt-4 md:flex-row md:space-x-8 md:mt-0`
                 : 'flex flex-col text-[1rem] font-bold mt-4 md:flex-row md:space-x-8 md:mt-0 '
             }>
             <li>
