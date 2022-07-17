@@ -1,0 +1,50 @@
+/* Animation */
+.line-1 {
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.anim-blink {
+  width: 0px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: blinkTextCursor 500ms infinite normal;
+}
+.anim-typewriter-OurMech {
+  animation: typewriter-Mech 4s steps(12, end) 1.5s 1 normal both,
+    blinkTextCursor 500ms steps(13) infinite normal;
+}
+
+.anim-typewriter-OurStock {
+  animation: typewriter-Stock 4s steps(8, end) 1.5s 1 normal both,
+    blinkTextCursor 500ms steps(9) infinite normal;
+}
+
+@keyframes typewriter-Stock {
+  from {
+    width: 0;
+  }
+  to {
+    width: 13rem;
+  }
+}
+
+@keyframes typewriter-Mech {
+  from {
+    width: 0;
+  }
+  to {
+    width: 18rem;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+/* Animation */

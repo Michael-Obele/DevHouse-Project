@@ -9,6 +9,7 @@ body {
   font-family: 'Manrope', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 /* Background */
@@ -59,40 +60,6 @@ body {
 }
 /* Body CSS */
 /* Second Body */
-.line-1 {
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-/* Animation */
-.anim-blink {
-  width: 0px;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: blinkTextCursor 500ms infinite normal;
-}
-.anim-typewriter {
-  animation: typewriter 4s steps(12, end) 1.5s 1 normal both,
-    blinkTextCursor 500ms steps(13) infinite normal;
-}
-@keyframes typewriter {
-  from {
-    width: 0;
-  }
-  to {
-    width: 18rem;
-  }
-}
-@keyframes blinkTextCursor {
-  from {
-    border-right-color: rgba(255, 255, 255, 0.75);
-  }
-  to {
-    border-right-color: transparent;
-  }
-}
 
 .box-g {
   background: linear-gradient(180deg, #1f3180 0%, rgba(31, 49, 128, 0) 100%);
