@@ -1,10 +1,11 @@
 import React from 'react';
 import { ReactComponent as Image } from './image.svg';
+import './hereAnimation.css';
 
 export function Here({}) {
   return (
     <section className='bg-light bg-[#1ed760] pb-80 h-screen body relative w-full md:w-auto'>
-      <Image className='w-[calc(28vw+(30-28)*((100vw-300px)/(1600-300)))] absolute top-0 right-10 z-[4]' />
+      <Image className='fade-in w-[calc(28vw+(30-28)*((100vw-300px)/(1600-300)))] absolute top-0 right-10 z-[4]' />
       <div className='absolute top-[5rem] lg:top-60 left-5 lg:left-40'>
         <h1 className='h1-calc font-[700] leading-[87.42px] text-[#2941ab]'>
           Listening isn't

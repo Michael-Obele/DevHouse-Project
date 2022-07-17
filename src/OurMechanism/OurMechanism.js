@@ -9,7 +9,7 @@ export function OurMechanism({}) {
     threshold: 0,
   });
   return (
-    <section ref={ref} className='bg-[#000812] relative pb-[300rem]'>
+    <section ref={ref} className='bg-[#000812] relative pb-[100rem]'>
       {/* Typed Character */}
       <OurMech />
       {/* Typed Character */}
