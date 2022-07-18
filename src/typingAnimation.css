@@ -24,8 +24,8 @@
 }
 
 .anim-typewriter-unit {
-  animation: typewriter-unit 4s steps(3) 1s 1 normal both,
-    blinkTextCursor 500ms steps(3) infinite normal;
+  animation: typewriter-unit 2s steps(3) 1s 1 normal both,
+    blinkTextCursor 0.5s steps(3) infinite both;
 }
 
 @keyframes typewriter-unit {

@@ -23,7 +23,7 @@ export function StockNav({}) {
     <nav
       ref={ref}
       className='bg-transparent border-gray-400 py-2.5 dark:bg-gray-800 container'>
-      <div className='container justify-center flex flex-wrap items-center  mx-auto'>
+      <div className='container justify-center flex flex-wrap items-center mx-auto'>
         <div>
           <ul
             className={
@@ -40,11 +40,11 @@ export function StockNav({}) {
               </a>
             </li>
             {musicList.map((item, index) => (
-              <li key={item}>
+              <li className='hidden lg:block' key={item}>
                 <a
                   key={index + '_' + item}
                   href='#'
-                  className='block mx-[0.7rem]  text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 dark:text-green-400 md:dark:hover:text-green dark:hover:bg-green-700 dark:hover:text-green md:dark:hover:bg-transparent dark:border-green-700'>
+                  className='mx-[0.7rem]  text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 dark:text-green-400 md:dark:hover:text-green dark:hover:bg-green-700 dark:hover:text-green md:dark:hover:bg-transparent dark:border-green-700'>
                   {item}
                 </a>
               </li>

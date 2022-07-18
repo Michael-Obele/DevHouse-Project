@@ -4,7 +4,7 @@ import fade from './hereAnimation.module.css';
 
 export function Here({}) {
   return (
-    <section className='bg-light bg-[#1ed760] pb-80 h-screen body relative w-full md:w-auto'>
+    <section className='bg-light bg-[#1ed760] pb-[50vh] h-screen lg:h-[130vh] body relative w-full md:w-auto'>
       <Image
         className={`${fade.fadeIn} w-[calc(28vw+(30-28)*((100vw-300px)/(1600-300)))] absolute top-0 right-10 z-[4]`}
       />

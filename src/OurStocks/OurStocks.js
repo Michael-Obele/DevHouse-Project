@@ -44,7 +44,7 @@ export function OurStocks({}) {
                 className={
                   inView
                     ? 'text-white mx-2 h-[18px] flex items-center font-[400] text-[1rem] border-r-2 line-1 anim-typewriter-unit'
-                    : 'text-white mx-auto h-[15px] flex font-[400] text-[1rem] my-[1px] border-r-2 anim-blink'
+                    : 'text-white mx-auto h-[1rem] flex font-[400] text-[1rem] my-[1px] border-r-2 anim-blink'
                 }>
                 71
               </p>
