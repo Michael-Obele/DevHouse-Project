@@ -17,7 +17,7 @@ export function OurStocks({}) {
       <OurStockText />
       {/* Typed Character */}
       <StockNav />
-      <div className=' pb-[10rem] flex flex-row justify-center'>
+      <div ref={ref} className=' pb-[10rem] flex flex-row justify-center'>
         <div className='py-[2rem] px-[4rem] bg-gradient-to-b from-[#1F3180] to-[#1f318000] container rounded-[32px] border-2 border-b-0 border-green-700 h-fit w-fit'>
           <div className='container flex justify-center items-center mx-auto'>
             <img src={Fela} alt='Fela Kuti' />
@@ -39,8 +39,15 @@ export function OurStocks({}) {
             <p className='text-white text-center font-[400] text-[1rem] mx-2'>
               $2,453
             </p>
-            <span className='text-white mx-2 bg-green-700 rounded px-2 text-center font-[400] text-[1rem]'>
-              71%
+            <span className=' bg-green-700 rounded-[8px] px-2 h-[24px] flex items-center'>
+              <p
+                className={
+                  inView
+                    ? 'text-white mx-2 h-[18px] flex items-center font-[400] text-[1rem] border-r-2 line-1 anim-typewriter-unit'
+                    : 'text-white mx-auto h-[15px] flex font-[400] text-[1rem] my-[1px] border-r-2 anim-blink'
+                }>
+                71
+              </p>
             </span>
           </div>
           <span className='flex justify-center'>

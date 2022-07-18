@@ -12,6 +12,7 @@
   overflow: hidden;
   animation: blinkTextCursor 500ms infinite normal;
 }
+
 .anim-typewriter-OurMech {
   animation: typewriter-Mech 4s steps(12, end) 1.5s 1 normal both,
     blinkTextCursor 500ms steps(13) infinite normal;
@@ -20,6 +21,20 @@
 .anim-typewriter-OurStock {
   animation: typewriter-Stock 4s steps(8, end) 1.5s 1 normal both,
     blinkTextCursor 500ms steps(9) infinite normal;
+}
+
+.anim-typewriter-unit {
+  animation: typewriter-unit 4s steps(3) 1s 1 normal both,
+    blinkTextCursor 500ms steps(3) infinite normal;
+}
+
+@keyframes typewriter-unit {
+  from {
+    width: 0;
+  }
+  to {
+    width: 1.2rem;
+  }
 }
 
 @keyframes typewriter-Stock {
@@ -41,7 +56,7 @@
 }
 @keyframes blinkTextCursor {
   from {
-    border-right-color: rgba(255, 255, 255, 0.75);
+    border-right-color: white;
   }
   to {
     border-right-color: transparent;
