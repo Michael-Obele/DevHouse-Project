@@ -18,15 +18,19 @@ export function OurStocks({}) {
       {/* Typed Character */}
       <StockNav />
       <div ref={ref} className=' pb-[10rem] flex flex-row justify-center'>
-        <div className='py-[2rem] px-[4rem] bg-gradient-to-b from-[#1F3180] to-[#1f318000] container rounded-[32px] border-2 border-b-0 border-green-700 h-fit w-fit'>
+        <div className='p-[2.5rem] bg-gradient-to-b from-[#1F3180] to-[#1f318000] container rounded-[32px] border-2 border-b-0 border-green-700 h-fit w-fit'>
           <div className='container flex justify-center items-center mx-auto'>
             <img src={Fela} alt='Fela Kuti' />
           </div>
-          <p className='text-center mt-5 text-white text-[1.25em]'>Fela Kuti</p>
-          <p className='text-center text-gray-300 text-[0.9em]'>
-            Sorrow, Tears and Blood
-          </p>
-          <div className='container flex mx-auto py-4'>
+          <div className='py-[1.5rem]'>
+            <p className='text-center mt-5 text-white text-[1.25em]'>
+              Fela Kuti
+            </p>
+            <p className='text-center text-gray-300 text-[0.9em]'>
+              Sorrow, Tears and Blood
+            </p>
+          </div>
+          <div className='w-full flex mx-auto py-4'>
             <input
               type='range'
               min='1'
