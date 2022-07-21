@@ -14,8 +14,10 @@ function App() {
     <>
       <NavBar darkMood={darkMood} setDarkMood={setDarkMood} />
       <Hero />
-      <OurStocks />
-      <OurMechanism />
+      <div className='bg-[#000812] bg-mech'>
+        <OurStocks />
+        <OurMechanism />
+      </div>
     </>
   );
 }

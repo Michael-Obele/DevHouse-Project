@@ -10,7 +10,7 @@ export function OurStocks() {
     threshold: 0,
   });
   return (
-    <section className='bg-[#000812] relative pb-[10rem]'>
+    <section className=' relative pb-[10rem]'>
       {/* Typed Character */}
       <OurStockText />
       {/* Typed Character */}

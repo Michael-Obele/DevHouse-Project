@@ -33,8 +33,11 @@ body {
 
 @media (min-width: 768px) {
   .bg-mech {
-    background-image: url(./Images/Ellipse1.png);
-    background-position: left 0px top 0px;
+    background-image: url(./Images/Ellipse1.png), url(./Images/Ellipse2.png),
+      url(./Images/Ellipse1.png), url(./Images/Ellipse2.png),
+      url(./Images/Ellipse1.png);
+    background-position: left 0px top 62rem, right 0px top 80rem,
+      left 0px top 98rem, right 0px top 120rem, left 0px top 140rem;
     background-repeat: no-repeat;
   }
 }
@@ -54,6 +57,7 @@ body {
 .l-calc {
   left: calc(28vw + (30 - 28) * ((100vw - 300px) / (1600 - 300)));
 }
+/* Calc Styles */
 /* Body CSS */
 
 #box {
