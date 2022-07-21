@@ -9,7 +9,9 @@ export function OurMechanism({}) {
     threshold: 0,
   });
   return (
-    <section ref={ref} className='bg-[#000812] relative pb-[100rem]'>
+    <section
+      ref={ref}
+      className='bg-[#000812] bg-mech relative pb-[10rem] md:pb-[140rem] lg:pb-[100rem]'>
       {/* Typed Character */}
       <OurMech />
       {/* Typed Character */}
@@ -19,16 +21,17 @@ export function OurMechanism({}) {
           <div
             key={item.title}
             className={inView ? item.divClassA : item.divClassB}>
-            <item.image1 className='my-[1em] md:my-auto mx-[2rem] w-[30%] md:h-[11rem] md:w-[11rem]' />
+            <item.image1 className='my-[1em] md:my-auto mx-[2rem] w-[30%] md:h-[10rem] md:w-[10.3rem]' />
+            {/* <p className='font-[800] text-[256px] box-t'>{item.title}</p> */}
             <div className='w-fit flex-col h-auto my-auto mx-[1em]'>
-              <h2 className='capitalize text-[#1ED760] text-[60%] md:text-[2ch] font-[700] text-left mb-1'>
+              <h2 className='capitalize text-center text-[#1ED760] text-[20px] md:text-[23px] font-[700] md:text-left mb-1'>
                 {item.h2}
               </h2>
-              <p className='text-white font-[400] text-[62%] lowercase text-left'>
+              <p className='text-white font-[400] text-[16px] lowercase text-center md:text-left'>
                 {item.p}
               </p>
             </div>
-            <item.image2 className='mx-auto my-4 h-auto w-[45%] md:h-[65%] md:w-3/4 md:my-auto' />
+            <item.image2 className='mx-auto mt-[2.813rem] mb-[2rem] h-[9.3rem] w-[14.25rem] md:h-[12.214rem] md:w-[18.75rem] md:my-auto' />
           </div>
         ))}
       </div>

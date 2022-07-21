@@ -16,11 +16,29 @@ body {
 
 .bg-light {
   background-image: url(./Images/bBox.png), url(./Images/bBox.png),
-    url(./Images/bBox.png), url(./Images/hBox.png);
-  background-position: 22.27% 8.5%, right 40% top 28%, right 4.48% bottom 38%,
+    url(./Images/hBox.png);
+  background-position: right 71% top 48%, right 22.2% bottom 30%,
     left -2.99% bottom 6.05%;
   background-repeat: no-repeat;
 }
+@media (min-width: 1024px) {
+  .bg-hero {
+    background-image: url(./Images/bBox.png), url(./Images/bBox.png),
+      url(./Images/bBox.png), url(./Images/hBox.png);
+    background-position: 22.27% 8.5%, right 40% top 28%, right 4.48% bottom 38%,
+      left -2.99% bottom 6.05%;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-mech {
+    background-image: url(./Images/Ellipse1.png);
+    background-position: left 0px top 0px;
+    background-repeat: no-repeat;
+  }
+}
+
 /* Background */
 
 /* Body CSS */
@@ -63,5 +81,19 @@ body {
 
 .box-g {
   background: linear-gradient(180deg, #1f3180 0%, rgba(31, 49, 128, 0) 100%);
+}
+
+.box-t {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 256px;
+  line-height: 350px;
+
+  background: linear-gradient(180deg, #2941ab 0%, rgba(255, 255, 255, 0) 72.4%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 /* Second Body */

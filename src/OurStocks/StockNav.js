@@ -34,7 +34,7 @@ export function StockNav({}) {
             <li>
               <a
                 href='#'
-                className='block py-auto pb-2 px-3 text-gray-700 border-b-2 border-green-700 md:bg-transparent md:hover:text-green-700'
+                className='text-white block py-auto pb-2 px-3 border-b-2 border-green-700 md:bg-transparent md:hover:text-green-700'
                 aria-current='true'>
                 <span className='mx-2'>Afrobeat</span>
               </a>
@@ -44,7 +44,7 @@ export function StockNav({}) {
                 <a
                   key={index + '_' + item}
                   href='#'
-                  className='mx-[0.7rem]  text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 dark:text-green-400 md:dark:hover:text-green dark:hover:bg-green-700 dark:hover:text-green md:dark:hover:bg-transparent dark:border-green-700'>
+                  className='mx-[0.7rem]  text-[#BFBFBF] border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 dark:text-green-400 md:dark:hover:text-green dark:hover:bg-green-700 dark:hover:text-green md:dark:hover:bg-transparent dark:border-green-700'>
                   {item}
                 </a>
               </li>

@@ -22,8 +22,8 @@ export const InfoList = [
     image1: One,
     image2: OneImg,
     imageAlt: 'Buy shares of songs from spotify',
-    divClassA: `box-g absolute right-0 slide-in-fwd-right-1 rounded-3xl border-l-[5px] border-l-[#1ed760] border-r-0 border-y-0 box-border h-fit flex flex-col md:flex-row lg:h-[14rem] w-3/4 border-4 lg:justify-between`,
-    divClassB: `hidden box-g absolute right-0  rounded-3xl border-l-[5px] border-l-[#1ed760] border-r-0 border-y-0 box-border h-fit flex flex-col md:flex-row lg:h-[14rem] w-3/4 border-4 lg:justify-between`,
+    divClassA: `box-g md:absolute flex mx-auto items-center justify-center md:md:right-0 slide-in-fwd-right-1 rounded-3xl border-l-[5px] border-l-[#1ed760] border-r-0 border-y-0 box-border h-fit flex flex-col md:flex-row lg:h-[14rem] w-3/4 border-4 lg:justify-between`,
+    divClassB: `hidden box-g absolute md:right-0  rounded-3xl border-l-[5px] border-l-[#1ed760] border-r-0 border-y-0 box-border h-fit flex flex-col md:flex-row lg:h-[14rem] w-3/4 border-4 lg:justify-between`,
   },
   {
     title: '2',
@@ -32,8 +32,8 @@ export const InfoList = [
     image1: Two,
     image2: TwoImg,
     imageAlt: 'Money collected is used for advertisement',
-    divClassA: `box-g absolute left-0 slide-in-fwd-left-2 rounded-3xl border-l-[0px] border-r-[5px] border-r-[#1ed760] border-r-0 border-y-0 box-border h-fit flex flex-col md:flex-row lg:h-[14rem] w-3/4 border-4 lg:justify-between mt-[30rem] md:mt-[18rem]`,
-    divClassB: `hidden box-g absolute left-0 rounded-3xl border-l-[0px] border-r-[5px] border-r-[#1ed760] border-r-0 border-y-0 box-border h-fit flex flex-col md:flex-row lg:h-[14rem] w-3/4 border-4 lg:justify-between mt-[30rem] md:mt-[18rem]`,
+    divClassA: `box-g md:absolute flex mx-auto items-center justify-center md:left-0 slide-in-fwd-left-2 rounded-3xl border-l-[0px] border-r-[5px] border-r-[#1ed760] border-r-0 border-y-0 box-border h-fit flex flex-col md:flex-row lg:h-[14rem] w-3/4 border-4 lg:justify-between mt-[16.2rem] md:mt-[25rem] lg:mt-[18rem]`,
+    divClassB: `hidden box-g md:absolute flex mx-auto items-center justify-center md:left-0 rounded-3xl border-l-[0px] border-r-[5px] border-r-[#1ed760] border-r-0 border-y-0 box-border h-fit flex flex-col md:flex-row lg:h-[14rem] w-3/4 border-4 lg:justify-between mt-[16.2rem] md:mt-[25rem] lg:mt-[18rem]`,
   },
   {
     title: '3',
@@ -42,8 +42,8 @@ export const InfoList = [
     image1: Three,
     image2: ThreeImg,
     imageAlt: '$8,000 generating 10 Billion YouTube impressions',
-    divClassA: `box-g absolute right-0 slide-in-fwd-right-3 rounded-3xl border-l-[5px] border-l-[#1ed760] border-r-0 border-y-0 box-border h-fit flex flex-col md:flex-row lg:h-[14rem] w-3/4 border-4 md:justify-between mt-[60rem] md:mt-[36rem]`,
-    divClassB: `hidden box-g absolute right-0 hidden rounded-3xl border-l-[5px] border-l-[#1ed760] border-r-0 border-y-0 box-border h-fit flex flex-col md:flex-row lg:h-[14rem] w-3/4 border-4 md:justify-between mt-[60rem] md:mt-[36rem]`,
+    divClassA: `box-g md:absolute flex mx-auto items-center justify-center md:right-0 slide-in-fwd-right-3 rounded-3xl border-l-[5px] border-l-[#1ed760] border-r-0 border-y-0 box-border h-fit flex flex-col md:flex-row lg:h-[14rem] w-3/4 border-4 md:justify-between mt-[16.2rem] md:mt-[50rem] lg:mt-[36rem]`,
+    divClassB: `hidden box-g md:absolute flex mx-auto items-center justify-center md:right-0 hidden rounded-3xl border-l-[5px] border-l-[#1ed760] border-r-0 border-y-0 box-border h-fit flex flex-col md:flex-row lg:h-[14rem] w-3/4 border-4 md:justify-between mt-[16.2rem] md:mt-[50rem] lg:mt-[36rem]`,
   },
   {
     title: '4',
@@ -52,8 +52,8 @@ export const InfoList = [
     image1: Four,
     image2: FourImg,
     imageAlt: 'payment from streams is distributed to a smart contract',
-    divClassA: `box-g absolute left-0 slide-in-fwd-left-4 rounded-3xl border-l-[0px] border-r-[5px] border-r-[#1ed760] border-r-0 border-y-0 box-border h-fit flex flex-col md:flex-row lg:h-[14rem] w-3/4 border-4 lg:justify-between mt-[90rem] md:mt-[54rem]`,
-    divClassB: `hidden box-g absolute left-0  rounded-3xl border-l-[0px] border-r-[5px] border-r-[#1ed760] border-r-0 border-y-0 box-border h-fit flex flex-col md:flex-row lg:h-[14rem] w-3/4 border-4 lg:justify-between mt-[90rem] md:mt-[54rem]`,
+    divClassA: `box-g md:absolute flex mx-auto items-center justify-center md:left-0 slide-in-fwd-left-4 rounded-3xl border-l-[0px] border-r-[5px] border-r-[#1ed760] border-r-0 border-y-0 box-border h-fit flex flex-col md:flex-row lg:h-[14rem] w-3/4 border-4 lg:justify-between mt-[16.2rem] md:mt-[75rem] lg:mt-[54rem]`,
+    divClassB: `hidden box-g md:absolute flex mx-auto items-center justify-center md:left-0  rounded-3xl border-l-[0px] border-r-[5px] border-r-[#1ed760] border-r-0 border-y-0 box-border h-fit flex flex-col md:flex-row lg:h-[14rem] w-3/4 border-4 lg:justify-between mt-[16.2rem] md:mt-[75rem] lg:mt-[54rem]`,
   },
   {
     title: '5',
@@ -62,7 +62,7 @@ export const InfoList = [
     image1: Five,
     image2: FiveImg,
     imageAlt: 'smart contract will payout shareholders',
-    divClassA: `box-g absolute right-0 slide-in-fwd-right-5 rounded-3xl border-l-[5px] border-l-[#1ed760] border-r-0 border-y-0 box-border h-fit flex flex-col md:flex-row lg:h-[14rem] w-3/4 border-4 md:justify-between mt-[120rem] md:mt-[72rem]`,
-    divClassB: `hidden box-g absolute right-0 rounded-3xl border-l-[5px] border-l-[#1ed760] border-r-0 border-y-0 box-border h-fit flex flex-col md:flex-row lg:h-[14rem] w-3/4 border-4 md:justify-between mt-[120rem] md:mt-[72rem]`,
+    divClassA: `box-g md:absolute flex mx-auto items-center justify-center md:right-0 slide-in-fwd-right-5 rounded-3xl border-l-[5px] border-l-[#1ed760] border-r-0 border-y-0 box-border h-fit flex flex-col md:flex-row lg:h-[14rem] w-3/4 border-4 md:justify-between mt-[16.2rem] md:mt-[100rem] lg:mt-[72rem]`,
+    divClassB: `hidden box-g md:absolute flex mx-auto items-center justify-center md:right-0 rounded-3xl border-l-[5px] border-l-[#1ed760] border-r-0 border-y-0 box-border h-fit flex flex-col md:flex-row lg:h-[14rem] w-3/4 border-4 md:justify-between mt-[16.2rem] md:mt-[100rem] lg:mt-[72rem]`,
   },
 ];

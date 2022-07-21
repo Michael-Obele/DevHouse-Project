@@ -1,6 +1,6 @@
 import { OurMechanism } from './OurMechanism/OurMechanism';
 import { OurMech } from './OurMechanism/OurMechText';
-import { Here } from './Here_Section/Here';
+import { Hero } from './Hero_Section/Hero';
 import React, { useEffect, useState } from 'react';
 import './index.css';
 import './typingAnimation.css';
@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <NavBar darkMood={darkMood} setDarkMood={setDarkMood} />
-      <Here />
+      <Hero />
       <OurStocks />
       <OurMechanism />
     </>

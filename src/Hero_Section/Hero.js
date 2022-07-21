@@ -1,0 +1,31 @@
+import React from 'react';
+import { ReactComponent as Image } from './image.svg';
+import fade from './hereAnimation.module.css';
+
+export function Hero() {
+  return (
+    <section className='bg-hero bg-[#1ed760] pb-[50vh] h-screen lg:h-[130vh] body relative w-full lg:w-auto'>
+      <div className='flex flex-col justify-center items-center pt-[80px] lg:block lg:absolute lg:top-[5rem] left-5 lg:left-40'>
+        <h1 className='h1-calc font-[700] leading-[87.42px] text-[#2941ab]'>
+          Listening isn't
+        </h1>
+        <h1 className='h1-calc font-[700] lg:leading-[87.42px] text-[#2941ab] lg:m-4 lg:ml-20'>
+          everything now
+        </h1>
+        <div className='bg-[#1ed760] rounded-l-[4px] rounded-r-[4px] border-x-[2px] border-l-[#0e173c] border-r-[#0e173c] lg:border-r-0 border-y-0 box-border lg:pt-0 h-24 w-1/2 pl-2.5  border-4'>
+          <p className='text-justify font-normal p-calc h-fit w-fit leading-4 lg:leading-5'>
+            There is more, you can now buy shares of songs from spotify using
+            our smarts contracts and that's all you will ever need to begin
+          </p>
+        </div>
+
+        <Image
+          className={`${fade.fadeIn} w-[135.84px] h-[256px] lg:w-[364px] lg:h-[686px] lg:absolute lg:top-0 lg:right-10 z-[4]`}
+        />
+        <button className='bg-[#0e173c] rounded-lg border-transparent px-1 mt-[2rem]  xl:m-[7rem] lg:mt-[2.5rem] box-border h-fit w-fit lg:p-4 border-4 l-calc cursor-pointer shadow-[0px_0px_41px_4px_#000812] text-white z-[2]'>
+          Explore Shares Now
+        </button>
+      </div>
+    </section>
+  );
+}
