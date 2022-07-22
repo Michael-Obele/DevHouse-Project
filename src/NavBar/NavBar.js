@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.png';
+import animate from './animation.module.css';
+import index from './index.module.css';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
 
 export function NavBar({ darkMood, setDarkMood }) {
   const navList = ['Learn more', 'Team', 'Contact us'];
+  const [show, setShow] = useState('hidden');
   const switchMood = () => {
     darkMood ? setDarkMood(false) : setDarkMood(true);
   };
@@ -23,7 +26,21 @@ export function NavBar({ darkMood, setDarkMood }) {
               </span>
             </a>
           </div>
-          <div>
+          {/* Humbugger */}
+          <div className='hamburger-menu md:hidden'>
+            <input
+              onClick={() =>
+                show === 'hidden' ? setShow('block') : setShow('hidden')
+              }
+              id={index.menuToggle}
+              type='checkbox'
+            />
+            <label className={index.menuBtn} for={index.menuToggle}>
+              <span></span>
+            </label>
+          </div>
+          {/* Humbugger */}
+          <div className={`${animate.slideInTop} ${show} md:block`}>
             <ul className='flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium'>
               <li>
                 <a
@@ -45,7 +62,8 @@ export function NavBar({ darkMood, setDarkMood }) {
               ))}
             </ul>
           </div>
-          <div className='block md:flex justify-x  md:flex-row md:space-x-8'>
+          <div
+            className={`${animate.slideInTop} ${show} md:flex justify-x md:flex-row md:space-x-8`}>
             <button className='bg-[#000812] rounded-lg border-transparent box-border h-fit w-fit my-auto p-2 border-4 cursor-pointer text-white'>
               Connect Wallet
             </button>

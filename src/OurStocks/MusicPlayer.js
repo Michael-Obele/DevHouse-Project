@@ -11,7 +11,7 @@ export function MusicPlayer() {
   return (
     <section
       ref={ref}
-      className='pb-[7rem] mt-[2rem] flex flex-col items-center lg:flex-row lg:justify-evenly'>
+      className='pb-[3.5rem] mt-[2rem] flex flex-col items-center lg:flex-row lg:justify-evenly'>
       {
         <div
           key={MusicList[0].id}
@@ -99,7 +99,7 @@ export function MusicPlayer() {
               <p
                 className={
                   inView
-                    ? 'text-white mx-2 h-[18px] flex items-center font-[400] text-[1rem] border-r-2 line-1 anim-typewriter-unit'
+                    ? 'text-white mx-2 h-[1rem] flex items-center font-[400] text-[1rem] border-r-2 line-1 anim-typewriter-unit'
                     : 'text-white mx-auto h-[1rem] flex font-[400] text-[1rem] my-[1px] border-r-2 anim-blink'
                 }>
                 {music.progress}

@@ -1,0 +1,29 @@
+.slideInTop {
+  -webkit-animation: slideInTop 0.8s ease-out both;
+  animation: slideInTop 0.8s ease-out both;
+}
+
+@-webkit-keyframes slideInTop {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInTop {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

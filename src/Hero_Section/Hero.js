@@ -12,8 +12,8 @@ export function Hero() {
         <h1 className='h1-calc font-[700] lg:leading-[87.42px] text-[#2941ab] lg:m-4 lg:ml-20'>
           everything now
         </h1>
-        <div className='bg-[#1ed760] rounded-l-[4px] rounded-r-[4px] border-x-[2px] border-l-[#0e173c] border-r-[#0e173c] lg:border-r-0 border-y-0 box-border lg:pt-0 h-24 w-1/2 pl-2.5  border-4'>
-          <p className='text-justify font-normal p-calc h-fit w-fit leading-4 lg:leading-5'>
+        <div className='bg-[#1ed760]  rounded-l-[4px] rounded-r-[4px] border-x-[2px] border-l-[#0e173c] border-r-[#0e173c] lg:border-r-0 border-y-0 box-border lg:pt-0 h-24 w-1/2 px-2.5  border-4'>
+          <p className='md:text-justify font-[500] text-center lg:p-calc h-fit w-fit leading-4 lg:leading-5'>
             There is more, you can now buy shares of songs from spotify using
             our smarts contracts and that's all you will ever need to begin
           </p>
