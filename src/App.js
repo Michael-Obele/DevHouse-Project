@@ -6,6 +6,7 @@ import './index.css';
 import './typingAnimation.css';
 import { NavBar } from './NavBar/NavBar';
 import { OurStocks } from './OurStocks/OurStocks';
+import OurCommunity from './OurCommunity/OurCommunity';
 
 function App() {
   const [darkMood, setDarkMood] = useState(false);
@@ -14,10 +15,11 @@ function App() {
     <>
       <NavBar darkMood={darkMood} setDarkMood={setDarkMood} />
       <Hero />
-      <div className='bg-[#000812] bg-mech'>
+      <section className='bg-[#000812] bg-mech'>
         <OurStocks />
         <OurMechanism />
-      </div>
+        <OurCommunity />
+      </section>
     </>
   );
 }

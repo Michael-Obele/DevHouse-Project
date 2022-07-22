@@ -5,6 +5,14 @@
   overflow: hidden;
 }
 
+.blink {
+  width: 1.3rem;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: blinkTextCursor 500ms infinite normal;
+}
+
 .anim-blink {
   width: 0px;
   text-align: center;
@@ -21,6 +29,11 @@
 .anim-typewriter-OurStock {
   animation: typewriter-Stock 4s steps(8, end) 1.5s 1 normal both,
     blinkTextCursor 500ms steps(9) infinite normal;
+}
+
+.anim-typewriter-OurCom {
+  animation: typewriter-Com 4s steps(17, end) 1.5s 1 normal both,
+    blinkTextCursor 500ms steps(18) infinite normal;
 }
 
 .anim-typewriter-unit {
@@ -54,6 +67,16 @@
     width: 18rem;
   }
 }
+
+@keyframes typewriter-Com {
+  from {
+    width: 0;
+  }
+  to {
+    width: 22rem;
+  }
+}
+
 @keyframes blinkTextCursor {
   from {
     border-right-color: white;
