@@ -14,7 +14,7 @@ export function NavBar({ darkMood, setDarkMood }) {
   return (
     <div className={darkMood ? 'dark' : ''}>
       <nav className='bg-white border-gray-400 px-2 sm:px-4 py-2.5 dark:bg-gray-800'>
-        <div className='container flex flex-wrap items-center  justify-between  mx-auto'>
+        <div className='container md:flex md:flex-wrap67 items-center  justify-between  mx-auto'>
           <div className='flex space-x-4'>
             <a href='#' className='flex items-center'>
               <img src={logo} className='mr-3 h-6 sm:h-9' alt='SpotXLogo' />
@@ -45,7 +45,7 @@ export function NavBar({ darkMood, setDarkMood }) {
               ))}
             </ul>
           </div>
-          <div className='flex justify-x  md:flex-row md:space-x-8'>
+          <div className='block md:flex justify-x  md:flex-row md:space-x-8'>
             <button className='bg-[#000812] rounded-lg border-transparent box-border h-fit w-fit my-auto p-2 border-4 cursor-pointer text-white'>
               Connect Wallet
             </button>

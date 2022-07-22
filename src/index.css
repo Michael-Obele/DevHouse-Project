@@ -14,7 +14,7 @@ body {
 
 /* Background */
 
-.bg-light {
+.bg-hero {
   background-image: url(./Images/bBox.png), url(./Images/bBox.png),
     url(./Images/hBox.png);
   background-position: right 71% top 48%, right 22.2% bottom 30%,

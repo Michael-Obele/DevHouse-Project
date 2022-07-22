@@ -11,7 +11,7 @@ export function MusicPlayer() {
   return (
     <section
       ref={ref}
-      className='pb-[7rem] flex flex-col items-center lg:flex-row lg:justify-evenly'>
+      className='pb-[7rem] mt-[2rem] flex flex-col items-center lg:flex-row lg:justify-evenly'>
       {
         <div
           key={MusicList[0].id}

@@ -22,7 +22,7 @@ export function Hero() {
         <Image
           className={`${fade.fadeIn} w-[135.84px] h-[256px] lg:w-[364px] lg:h-[686px] lg:absolute lg:top-0 lg:right-10 z-[4]`}
         />
-        <button className='bg-[#0e173c] rounded-lg border-transparent px-1 mt-[2rem]  xl:m-[7rem] lg:mt-[2.5rem] box-border h-fit w-fit lg:p-4 border-4 l-calc cursor-pointer shadow-[0px_0px_41px_4px_#000812] text-white z-[2]'>
+        <button className='bg-[#000812] rounded-[8px] border-transparent px-[2rem] py-[1rem] mt-[5rem]  xl:m-[7rem] lg:mt-[2.9rem] box-border h-fit w-fit border-4 l-calc cursor-pointer shadow-[0px_0px_41px_4px_#000812] text-white z-[2]'>
           Explore Shares Now
         </button>
       </div>
