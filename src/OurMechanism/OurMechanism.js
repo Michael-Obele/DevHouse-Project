@@ -10,8 +10,9 @@ export function OurMechanism({}) {
   });
   return (
     <section
+      id='Learn'
       ref={ref}
-      className=' relative pb-[10rem] md:pb-[20rem] lg:pb-[100rem]'>
+      className='relative pb-[10rem] md:pb-[20rem] lg:pb-[100rem]'>
       {/* Typed Character */}
       <OurMech />
       {/* Typed Character */}

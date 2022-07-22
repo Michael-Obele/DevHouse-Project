@@ -4,7 +4,9 @@ import fade from './hereAnimation.module.css';
 
 export function Hero() {
   return (
-    <section className='bg-hero bg-[#1ed760] pb-[50vh] h-screen lg:h-[130vh] body relative w-full lg:w-auto'>
+    <section
+      id='Home'
+      className='bg-hero bg-[#1ed760] pb-[50vh] h-screen lg:h-[130vh] body relative w-full lg:w-auto'>
       <div className='flex flex-col justify-center items-center pt-[80px] lg:block lg:absolute lg:top-[5rem] left-5 lg:left-40'>
         <h1 className='h1-calc font-[700] leading-[87.42px] text-[#2941ab]'>
           Listening isn't
