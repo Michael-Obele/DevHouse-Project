@@ -36,6 +36,11 @@
     blinkTextCursor 500ms steps(18) infinite normal;
 }
 
+.anim-typewriter-OurTeam {
+  animation: typewriter-Team 4s steps(7, end) 1.5s 1 normal both,
+    blinkTextCursor 500ms steps(8) infinite normal;
+}
+
 .anim-typewriter-unit {
   animation: typewriter-unit 2s steps(3) 1s 1 normal both,
     blinkTextCursor 0.5s steps(3) infinite both;
@@ -74,6 +79,15 @@
   }
   to {
     width: 22rem;
+  }
+}
+
+@keyframes typewriter-Team {
+  from {
+    width: 0;
+  }
+  to {
+    width: 11rem;
   }
 }
 

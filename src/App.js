@@ -7,6 +7,7 @@ import './typingAnimation.css';
 import { NavBar } from './NavBar/NavBar';
 import { OurStocks } from './OurStocks/OurStocks';
 import OurCommunity from './OurCommunity/OurCommunity';
+import OurTeam from './OurTeam/OurTeam';
 
 function App() {
   const [darkMood, setDarkMood] = useState(false);
@@ -18,6 +19,7 @@ function App() {
       <section className='bg-[#000812] bg-mech-com'>
         <OurStocks />
         <OurMechanism />
+        <OurTeam />
         <OurCommunity />
       </section>
     </>

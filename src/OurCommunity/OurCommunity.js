@@ -8,7 +8,7 @@ import { useInView } from 'react-intersection-observer';
 
 function OurCommunity() {
   const { ref, inView } = useInView({
-    threshold: 0.7,
+    threshold: 0.2,
     // triggerOnce: true,
   });
 
@@ -18,7 +18,7 @@ function OurCommunity() {
       <OurCom />
       <div
         ref={ref}
-        className='pt-[4rem] px-[16rem] flex flex-row space-x-[5rem]'>
+        className='pt-[4rem] md:px-[3.0625rem] lg:px-[16rem] items-center space-y-[2.5rem] md:space-y-0 flex flex-col md:flex-row md:space-x-[5rem]'>
         {communityList.map((item, index) => (
           <div
             key={index}
