@@ -91,7 +91,7 @@ export function MusicPlayer() {
               {music.price} USD
             </p>
             <span className=' bg-green-700 rounded-[8px] px-2 h-[24px] flex items-center'>
-              <p className='text-white mx-2 h-[1rem] flex items-center font-[400] text-[1rem] border-r-2 line-1 blink'>
+              <p className='text-white mx-1 h-[1rem] flex items-center font-[400] text-[1rem] border-r-2 line-1 blink'>
                 {music.progress}
               </p>
             </span>

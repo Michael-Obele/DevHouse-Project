@@ -15,7 +15,7 @@ function App() {
     <>
       <NavBar darkMood={darkMood} setDarkMood={setDarkMood} />
       <Hero />
-      <section className='bg-[#000812] bg-mech'>
+      <section className='bg-[#000812] bg-mech-com'>
         <OurStocks />
         <OurMechanism />
         <OurCommunity />

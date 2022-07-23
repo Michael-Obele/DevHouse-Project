@@ -32,12 +32,13 @@ body {
 }
 
 @media (min-width: 768px) {
-  .bg-mech {
+  .bg-mech-com {
     background-image: url(./Images/Ellipse1.png), url(./Images/Ellipse2.png),
       url(./Images/Ellipse1.png), url(./Images/Ellipse2.png),
-      url(./Images/Ellipse1.png);
+      url(./Images/Ellipse1.png), url(./Images/EllipseD.png);
     background-position: left 0px top 62rem, right 0px top 80rem,
-      left 0px top 98rem, right 0px top 120rem, left 0px top 140rem;
+      left 0px top 98rem, right 0px top 120rem, left 0px top 140rem,
+      left 70px top 180rem;
     background-repeat: no-repeat;
   }
 }
