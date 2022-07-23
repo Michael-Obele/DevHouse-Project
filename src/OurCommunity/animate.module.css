@@ -1,0 +1,29 @@
+.swirlInFwd {
+  -webkit-animation: swirlInFwd 1.6s ease-out 0.5s both;
+  animation: swirlInFwd 1.6s ease-out 0.5s both;
+}
+
+@-webkit-keyframes swirlInFwd {
+  0% {
+    -webkit-transform: rotate(-540deg) scale(0);
+    transform: rotate(-540deg) scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+    opacity: 1;
+  }
+}
+@keyframes swirlInFwd {
+  0% {
+    -webkit-transform: rotate(-540deg) scale(0);
+    transform: rotate(-540deg) scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+    opacity: 1;
+  }
+}

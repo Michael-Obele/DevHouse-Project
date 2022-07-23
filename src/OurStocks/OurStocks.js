@@ -18,7 +18,7 @@ export function OurStocks() {
       <MusicPlayer />
       <MusicPlayer />
       <div className='container flex flex-row items-center justify-center'>
-        <span className='border-b-[1px] ml-[64px] mr-[32px] pl-[65vw] lg:pl-[78vw] border-[#1ED760]'></span>
+        <span className='border-b-[.0625rem] ml-[4rem] mr-[2rem] pl-[65vw] lg:pl-[78vw] border-[#1ED760]'></span>
         <span className='flex flex-row items-center text-white'>
           <p className='bg-transparent py-auto font-medium text-[1rem]'>
             Show More
