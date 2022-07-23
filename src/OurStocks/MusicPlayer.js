@@ -12,6 +12,7 @@ export function MusicPlayer() {
     <section
       ref={ref}
       className='pb-[3.5rem] mt-[2rem] flex flex-col items-center lg:flex-row lg:justify-evenly'>
+      {/* Small Screen Single Column */}
       {
         <div
           key={MusicList[0].id}
@@ -51,13 +52,15 @@ export function MusicPlayer() {
             </span>
           </div>
           <span className='flex justify-center mt-[2.5rem]'>
-            <button className='w-[11rem] h-[2.4rem] bg-white  px-6 flex flex-row items-center text-black rounded-[8px]'>
+            <button className='w-[11rem] h-[2.4rem] bg-white  px-6 flex flex-row items-center text-black rounded-[8px] transition-all hover:scale-110'>
               <BsFillCartCheckFill className='mr-2 mb-1' />
               Buy Shares
             </button>
           </span>
         </div>
       }
+
+      {/* Big screens Multiple Columns */}
       {MusicList.map((music) => (
         <div
           key={music.id}
@@ -97,7 +100,7 @@ export function MusicPlayer() {
             </span>
           </div>
           <span className='flex justify-center mt-[2.5rem]'>
-            <button className='w-[11rem] h-[2.4rem] bg-white  px-6 flex flex-row items-center text-black rounded-[8px]'>
+            <button className='w-[11rem] h-[2.4rem] bg-white  px-6 flex flex-row items-center text-black rounded-[8px] transition-all hover:scale-110'>
               <BsFillCartCheckFill className='mr-2 mb-1' />
               Buy Shares
             </button>

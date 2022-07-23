@@ -11,7 +11,7 @@ export const MusicList = [
     name: 'Sorrow, Tears and Blood',
     price: '$2,453',
     image: Fela,
-    progress: '71',
+    progress: 71,
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ export const MusicList = [
     name: 'Love, Damini',
     price: '$2,873',
     image: Burna,
-    progress: '86',
+    progress: 86,
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ export const MusicList = [
     name: 'Love, Damini',
     price: '$2,013',
     image: Falz,
-    progress: '55',
+    progress: 55,
   },
   {
     id: 4,
@@ -35,6 +35,6 @@ export const MusicList = [
     name: 'ZULU',
     price: '$1,853',
     image: NastyC,
-    progress: '45',
+    progress: 45,
   },
 ];
