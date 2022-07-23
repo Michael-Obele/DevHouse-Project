@@ -9,7 +9,7 @@ import { useInView } from 'react-intersection-observer';
 function OurCommunity() {
   const { ref, inView } = useInView({
     threshold: 0.2,
-    // triggerOnce: true,
+    triggerOnce: true,
   });
 
   const communityList = [{ SVG: Discord }, { SVG: Telegram }, { SVG: Twitter }];

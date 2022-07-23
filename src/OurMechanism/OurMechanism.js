@@ -7,6 +7,7 @@ import './slideAnimation.css';
 export function OurMechanism({}) {
   const { ref, inView } = useInView({
     threshold: 0,
+    triggerOnce: true,
   });
   return (
     <section

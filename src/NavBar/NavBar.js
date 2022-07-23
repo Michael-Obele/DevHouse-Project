@@ -50,7 +50,7 @@ export function NavBar({ darkMood, setDarkMood }) {
               id={index.menuToggle}
               type='checkbox'
             />
-            <label className={index.menuBtn} for={index.menuToggle}>
+            <label className={index.menuBtn} htmlFor={index.menuToggle}>
               <span></span>
             </label>
           </div>

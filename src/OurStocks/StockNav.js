@@ -30,7 +30,7 @@ export function StockNav({}) {
           className={
             inView
               ? `${fade.fadeIn} flex flex-row px-[6rem] text-[1rem] font-bold mt-4 lg:space-x-8 md:mt-0`
-              : 'flex  px-[6rem] text-[1rem] font-bold mt-4 flex-row md:space-x-8 md:mt-0 '
+              : 'opacity-0 flex  px-[6rem] text-[1rem] font-bold mt-4 flex-row md:space-x-8 md:mt-0 '
           }>
           <li>
             <a
@@ -44,9 +44,16 @@ export function StockNav({}) {
             <BsSearch size={20} />
           </button>
           <input
+            list='genre'
             className={`${index.input} search rounded-[8px] rounded-l-none bg-[#B0B7C0] text-[#0B4B22] lg:hidden`}
             placeholder='Search Genre'
           />
+          <datalist id='genre'>
+            {musicList.map((item, index) => (
+              <option key={index} value={item} />
+            ))}
+          </datalist>
+          {/* Other Genre for Larger Screens */}
           {musicList.map((item, index) => (
             <li className='hidden lg:block' key={item}>
               <a

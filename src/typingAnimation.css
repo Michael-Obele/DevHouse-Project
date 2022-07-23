@@ -22,28 +22,23 @@
 }
 
 .anim-typewriter-OurMech {
-  animation: typewriter-Mech 4s steps(12, end) 1.5s 1 normal both,
+  animation: typewriter-Mech 3s steps(12, end) 1s 1 normal both,
     blinkTextCursor 500ms steps(13) infinite normal;
 }
 
 .anim-typewriter-OurStock {
-  animation: typewriter-Stock 4s steps(8, end) 1.5s 1 normal both,
+  animation: typewriter-Stock 2s steps(8, end) 1s 1 normal both,
     blinkTextCursor 500ms steps(9) infinite normal;
 }
 
 .anim-typewriter-OurCom {
-  animation: typewriter-Com 4s steps(17, end) 1.5s 1 normal both,
+  animation: typewriter-Com 4s steps(17, end) 1s 1 normal both,
     blinkTextCursor 500ms steps(18) infinite normal;
 }
 
 .anim-typewriter-OurTeam {
-  animation: typewriter-Team 4s steps(7, end) 1.5s 1 normal both,
+  animation: typewriter-Team 2s steps(7, end) 1s 1 normal both,
     blinkTextCursor 500ms steps(8) infinite normal;
-}
-
-.anim-typewriter-unit {
-  animation: typewriter-unit 2s steps(3) 1s 1 normal both,
-    blinkTextCursor 0.5s steps(3) infinite both;
 }
 
 @keyframes typewriter-unit {
