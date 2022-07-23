@@ -8,7 +8,7 @@ import { useInView } from 'react-intersection-observer';
 
 function OurCommunity() {
   const { ref, inView } = useInView({
-    threshold: 1,
+    threshold: 0.7,
     // triggerOnce: true,
   });
 
