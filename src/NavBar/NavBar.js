@@ -7,7 +7,7 @@ import '../btnLoading.css';
 
 export function NavBar({ darkMood, setDarkMood }) {
   const simulateNetworkRequest = () => {
-    return new Promise((resolve) => setTimeout(resolve, 2500));
+    return new Promise((resolve) => setTimeout(resolve, 4500));
   }; // Simulate a network request.
   const [isLoading, setLoading] = useState(false);
   const navList = ['Learn more', 'Team', 'Contact us'];

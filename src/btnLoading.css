@@ -32,7 +32,7 @@
     var(--first-color-alt) 0.75rem,
     var(--first-color-alt) 1.5rem
   );
-  animation: load 1s infinite linear;
+  animation: load 2.2s infinite linear;
 }
 .buttonText {
   position: relative;
