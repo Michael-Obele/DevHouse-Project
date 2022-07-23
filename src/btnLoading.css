@@ -1,8 +1,8 @@
 /* Button */
 :root {
   /* variables */
-  --first-color: #00972b;
-  --first-color-alt: #21480a;
+  --first-color: #000812;
+  --first-color-alt: #020406;
   --text-color: white;
 }
 .buttonLoader {
@@ -17,6 +17,7 @@
   box-shadow: 0 18px 40px #6dce504d;
   overflow: hidden;
   cursor: wait;
+  z-index: 0;
 }
 .buttonLoader::before {
   content: '';
@@ -33,9 +34,11 @@
     var(--first-color-alt) 1.5rem
   );
   animation: load 2.2s infinite linear;
+  z-index: 0;
 }
 .buttonText {
   position: relative;
+  z-index: 2;
 }
 /* Loading button animation */
 @keyframes load {

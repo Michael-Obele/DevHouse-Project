@@ -40,7 +40,7 @@ export function Hero() {
         />
         {isLoading ? (
           <button className='bg-[#000812] rounded-[8px] border-transparent px-[2rem] py-[1rem] mt-[5rem]  xl:m-[7rem] lg:mt-[2.9rem] box-border h-fit w-fit border-4 cursor-pointer shadow-[0px_0px_41px_4px_#000812] text-white z-[2] transition-all hover:scale-110 buttonLoader'>
-            Exploring Shares Now
+            <span className='z-[2]'>Exploring Shares Now</span>
           </button>
         ) : (
           <button
