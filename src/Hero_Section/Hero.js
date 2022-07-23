@@ -39,13 +39,13 @@ export function Hero() {
           className={`${fade.fadeIn} w-[135.84px] h-[256px] lg:w-[364px] lg:h-[686px] lg:absolute lg:top-0 lg:right-10 z-[4]`}
         />
         {isLoading ? (
-          <button className='bg-[#000812] rounded-[8px] border-transparent px-[2rem] py-[1rem] mt-[5rem]  xl:m-[7rem] lg:mt-[2.9rem] box-border h-fit w-fit border-4 cursor-pointer shadow-[0px_0px_41px_4px_#000812] text-white z-[2] transition-all hover:scale-110 buttonLoader'>
+          <button className='bg-[#000812] rounded-[8px] border-transparent px-[2rem] py-[1rem] mt-[5rem]  xl:m-[7rem] lg:mt-[2.9rem] box-border h-fit w-fit border-4 cursor-pointer text-white z-[2] transition-all hover:scale-110 buttonLoader'>
             <span className='z-[2]'>Exploring Shares Now</span>
           </button>
         ) : (
           <button
             onClick={Load}
-            className='bg-[#000812] rounded-[8px] border-transparent px-[2rem] py-[1rem] mt-[5rem]  xl:m-[7rem] lg:mt-[2.9rem] box-border h-fit w-fit border-4 cursor-pointer shadow-[0px_0px_41px_4px_#000812] text-white z-[2] transition-all hover:scale-110'>
+            className='bg-[#000812] rounded-[8px] border-transparent px-[2rem] py-[1rem] mt-[5rem]  xl:m-[7rem] lg:mt-[2.9rem] box-border h-fit w-fit border-4 cursor-pointer text-white z-[2] transition-all hover:scale-110'>
             Explore Shares Now
           </button>
         )}
