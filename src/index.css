@@ -55,10 +55,6 @@ body {
 .p-calc {
   font-size: calc(13px + (24 - 13) * ((100vw - 400px) / (1600 - 300)));
 }
-
-.l-calc {
-  left: calc(28vw + (30 - 28) * ((100vw - 300px) / (1600 - 300)));
-}
 /* Calc Styles */
 /* Body CSS */
 
@@ -83,7 +79,7 @@ body {
   border-radius: 32px;
 }
 /* Body CSS */
-/* Second Body */
+/* Personal Configs */
 
 .box-g {
   background: linear-gradient(180deg, #1f3180 0%, rgba(31, 49, 128, 0) 100%);
@@ -102,4 +98,5 @@ body {
   background-clip: text;
   text-fill-color: transparent;
 }
-/* Second Body */
+/* Personal Configs */
+/* Body CSS */

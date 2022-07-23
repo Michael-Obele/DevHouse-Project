@@ -1,8 +1,22 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { ReactComponent as Image } from './image.svg';
 import fade from './hereAnimation.module.css';
+import '../btnLoading.css';
 
 export function Hero() {
+  const simulateNetworkRequest = () => {
+    return new Promise((resolve) => setTimeout(resolve, 2500));
+  }; // Simulate a network request.
+  const [isLoading, setLoading] = useState(false);
+  useEffect(() => {
+    if (isLoading) {
+      simulateNetworkRequest().then(() => {
+        setLoading(false);
+      });
+    }
+  }, [isLoading]);
+
+  const Load = () => setLoading(true);
   return (
     <section
       id='Home'
@@ -24,9 +38,17 @@ export function Hero() {
         <Image
           className={`${fade.fadeIn} w-[135.84px] h-[256px] lg:w-[364px] lg:h-[686px] lg:absolute lg:top-0 lg:right-10 z-[4]`}
         />
-        <button className='bg-[#000812] rounded-[8px] border-transparent px-[2rem] py-[1rem] mt-[5rem]  xl:m-[7rem] lg:mt-[2.9rem] box-border h-fit w-fit border-4 l-calc cursor-pointer shadow-[0px_0px_41px_4px_#000812] text-white z-[2] transition-all hover:scale-110'>
-          Explore Shares Now
-        </button>
+        {isLoading ? (
+          <button className='bg-[#000812] rounded-[8px] border-transparent px-[2rem] py-[1rem] mt-[5rem]  xl:m-[7rem] lg:mt-[2.9rem] box-border h-fit w-fit border-4 cursor-pointer shadow-[0px_0px_41px_4px_#000812] text-white z-[2] transition-all hover:scale-110 buttonLoader'>
+            Exploring Now
+          </button>
+        ) : (
+          <button
+            onClick={Load}
+            className='bg-[#000812] rounded-[8px] border-transparent px-[2rem] py-[1rem] mt-[5rem]  xl:m-[7rem] lg:mt-[2.9rem] box-border h-fit w-fit border-4 cursor-pointer shadow-[0px_0px_41px_4px_#000812] text-white z-[2] transition-all hover:scale-110'>
+            Explore Shares Now
+          </button>
+        )}
       </div>
     </section>
   );

@@ -1,0 +1,49 @@
+/* Button */
+:root {
+  /* variables */
+  --first-color: #00972b;
+  --first-color-alt: #21480a;
+  --text-color: white;
+}
+.buttonLoader {
+  border: none;
+  outline: none;
+  position: relative;
+  /* padding: 1.25rem 2.5rem; */
+  background-color: var(--first-color);
+  color: var(--text-color);
+  font-size: 1rem;
+  /* border-radius: 0.5rem; */
+  box-shadow: 0 18px 40px #6dce504d;
+  overflow: hidden;
+  cursor: wait;
+}
+.buttonLoader::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    60deg,
+    transparent,
+    transparent 0.75rem,
+    var(--first-color-alt) 0.75rem,
+    var(--first-color-alt) 1.5rem
+  );
+  animation: load 1s infinite linear;
+}
+.buttonText {
+  position: relative;
+}
+/* Loading button animation */
+@keyframes load {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1.75rem);
+  }
+}
+/* Button */

@@ -1,15 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import logo from './logo.png';
 import animate from './animation.module.css';
 import index from './index.module.css';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
+import '../btnLoading.css';
 
 export function NavBar({ darkMood, setDarkMood }) {
+  const simulateNetworkRequest = () => {
+    return new Promise((resolve) => setTimeout(resolve, 2500));
+  }; // Simulate a network request.
+  const [isLoading, setLoading] = useState(false);
   const navList = ['Learn more', 'Team', 'Contact us'];
   const [show, setShow] = useState('hidden');
   const switchMood = () => {
     darkMood ? setDarkMood(false) : setDarkMood(true);
   };
+
+  useEffect(() => {
+    if (isLoading) {
+      simulateNetworkRequest().then(() => {
+        setLoading(false);
+      });
+    }
+  }, [isLoading]);
+
+  const Load = () => setLoading(true);
 
   const toggleDarkMode = (checked) => {
     setDarkMood(checked);
@@ -64,9 +79,18 @@ export function NavBar({ darkMood, setDarkMood }) {
           </div>
           <div
             className={`${animate.slideInTop} ${show} mt-2 md:mt-0 space-y-2 md:flex justify-x md:flex-row md:space-x-8`}>
-            <button className='bg-[#000812] rounded-lg border-transparent box-border h-fit w-fit my-auto p-2 border-4 cursor-pointer text-white transition-all hover:scale-110'>
-              Connect Wallet
-            </button>
+            {isLoading ? (
+              <button
+                className={`bg-[#000812] rounded-lg border-transparent box-border h-fit w-fit my-auto p-2 border-4 text-white transition-all hover:scale-110 buttonLoader`}>
+                Connecting Wallet
+              </button>
+            ) : (
+              <button
+                onClick={Load}
+                className={`bg-[#000812] rounded-lg border-transparent box-border h-fit w-fit my-auto p-2 border-4 cursor-pointer text-white transition-all hover:scale-110`}>
+                Connect Wallet
+              </button>
+            )}
             <DarkModeSwitch
               className='cursor-pointer ml-2 my-auto dark:text-green-300'
               onClick={() => switchMood()}
