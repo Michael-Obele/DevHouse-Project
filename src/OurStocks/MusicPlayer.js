@@ -94,7 +94,7 @@ export function MusicPlayer() {
               </p>
             </span>
           </div>
-          <span className='flex justify-center mt-[2.5rem]'>
+          <span className='flex px-[24.5px] mt-[2.5rem]'>
             <button
               onClick={Load}
               className='w-[11rem] h-[2.4rem] bg-white  px-6 flex flex-row items-center text-black rounded-[0.5rem] transition-all hover:scale-110'>
