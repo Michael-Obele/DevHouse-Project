@@ -26,7 +26,7 @@ export function NavBar() {
     <>
       <nav className='bg-white border-gray-400 px-2 sm:px-4 py-2.5 dark:bg-gray-800 transition-colors delay-[180ms]'>
         <div className='container md:flex md:flex-wrap67 items-center  justify-between  mx-auto'>
-          <div className='flex space-x-[.5rem] transition-all hover:scale-110'>
+          <div className='flex space-x-[.5rem] transition-all md:hover:scale-110'>
             <a href='#' className='flex items-center'>
               <img src={logo} className='mr-3 h-6 sm:h-9' alt='SpotX Logo' />
               <span className='self-center text-xl font-semibold whitespace-nowrap dark:text-white'>
