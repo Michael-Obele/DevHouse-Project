@@ -19,7 +19,6 @@ export function StockNav() {
     'Mushup',
     'Afropop',
     'Rap',
-    'Hip Hop',
   ];
   return (
     <nav

@@ -29,7 +29,7 @@ export function OurMechanism() {
               <h2 className='capitalize text-center text-[#1ED760] text-[1.25rem] md:text-[1.438rem] font-[700] md:text-left mb-1'>
                 {item.h2}
               </h2>
-              <p className='text-white font-[400] text-[16px] lowercase text-center md:text-left'>
+              <p className='text-white font-[200] text-[1rem] lowercase text-center md:text-left'>
                 {item.p}
               </p>
             </div>
