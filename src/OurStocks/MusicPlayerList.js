@@ -33,7 +33,7 @@ export const MusicList = [
     id: 4,
     artist: 'Nasty C',
     name: 'ZULU',
-    price: '$1,853',
+    price: '$1853',
     image: NastyC,
     progress: 45,
   },
