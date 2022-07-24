@@ -33,7 +33,7 @@ function OurCommunity() {
           </div>
         ))}
       </div>
-      <span className='border-b-[8px] pt-[7rem] mb-4 px-[120px] border-[#1ED760]'></span>
+      <span className='border-b-[4px] pt-[7rem] mb-4 px-[120px] border-[#1ED760]'></span>
     </section>
   );
 }
