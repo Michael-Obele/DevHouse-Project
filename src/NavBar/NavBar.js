@@ -25,7 +25,7 @@ export function NavBar() {
 
   return (
     <>
-      <nav className='bg-white border-gray-400 px-2 sm:px-4 py-2.5 transition-all delay-[180ms]'>
+      <nav className='bg-white border-gray-400 px-2 sm:px-4 py-2.5 transition-all delay-[180ms] h-[64px]'>
         <div className='container md:flex md:flex-wrap67 items-center  justify-between  mx-auto'>
           <div className='flex space-x-[.5rem] transition-all md:hover:scale-110'>
             <a href='#' className='flex items-center'>
