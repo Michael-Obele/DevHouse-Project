@@ -9,11 +9,8 @@
   border: none;
   outline: none;
   position: relative;
-  /* padding: 1.25rem 2.5rem; */
   background-color: var(--first-color);
   color: var(--text-color);
-  font-size: 1rem;
-  /* border-radius: 0.5rem; */
   box-shadow: 0 18px 40px #6dce504d;
   overflow: hidden;
   cursor: wait;

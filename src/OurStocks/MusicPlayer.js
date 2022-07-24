@@ -30,12 +30,12 @@ export function MusicPlayer() {
       {
         <div
           key={MusicList[0].id}
-          className='p-[2.5rem] w-[19rem] bg-gradient-to-b from-[#1F3180] to-[#1f318000] container rounded-[32px] border-2 border-b-0 border-[#1ED760] h-[30.375rem] items-center lg:hidden'>
+          className='p-[2.5rem] w-[19rem] bg-gradient-to-b from-[#1F3180] to-[#1f318000] container rounded-[2rem] border-2 border-b-0 border-[#1ED760] h-[30.375rem] items-center lg:hidden'>
           <div className='w-[10.25rem] h-[10.56rem] items-center mx-auto'>
             <img src={MusicList[0].image} alt={MusicList[0].artist} />
           </div>
           <div className='py-[1.563rem] flex flex-col justify-between'>
-            <p className='text-center leading-[28px] text-white text-[1.25em]'>
+            <p className='text-center leading-[1.75rem] text-white text-[1.25em]'>
               {MusicList[0].artist}
             </p>
             <p className='text-center text-gray-300 text-[0.9em]'>
@@ -45,7 +45,7 @@ export function MusicPlayer() {
           <div className='w-full mx-auto'>
             <input
               type='range'
-              min='0'
+              min='1'
               max='100'
               onChange={(e) =>
                 dispatch({
@@ -63,16 +63,20 @@ export function MusicPlayer() {
           </div>
           <div className='container mt-[0.5rem] flex justify-center items-center mx-auto'>
             <p className='text-white text-center font-[400] text-[1rem] mx-2'>
-              {MusicList[0].price} USD
+              {(
+                Number(MusicList[0].price.split('$')[1]) +
+                parseInt(value[MusicList[0].artist.split(' ')[0]])
+              ).toLocaleString()}{' '}
+              USD
             </p>
-            <span className=' bg-green-700 rounded-[8px] px-2 h-[24px] flex items-center'>
+            <span className=' bg-green-700 rounded-[0.5rem] px-2 h-[1.5rem] flex items-center'>
               <p className='text-white mx-2 h-[1rem] flex items-center font-[400] text-[1rem] border-r-2 line-1 blink'>
                 {value[MusicList[0].artist.split(' ')[0]]}
               </p>
             </span>
           </div>
           <span className='flex justify-center mt-[2.5rem]'>
-            <button className='w-[11rem] h-[2.4rem] bg-white  px-6 flex flex-row items-center text-black rounded-[8px] transition-all hover:scale-110'>
+            <button className='w-[11rem] h-[2.4rem] bg-white  px-6 flex flex-row items-center text-black rounded-[0.5rem] transition-all hover:scale-110'>
               <BsFillCartCheckFill className='mr-2 mb-1' />
               Buy Shares
             </button>
@@ -84,12 +88,12 @@ export function MusicPlayer() {
       {MusicList.map((music) => (
         <div
           key={music.id}
-          className='p-[2.5rem] w-[19rem] bg-gradient-to-b from-[#1F3180] to-[#1f318000] container rounded-[32px] border-2 border-b-0 border-[#1ED760] h-[30.375rem] items-center hidden lg:block'>
+          className='p-[2.5rem] w-[19rem] bg-gradient-to-b from-[#1F3180] to-[#1f318000] container rounded-[2rem] border-2 border-b-0 border-[#1ED760] h-[30.375rem] items-center hidden lg:block'>
           <div className='w-[10.25rem] h-[10.56rem] items-center mx-auto'>
             <img src={music.image} alt={music.artist} />
           </div>
           <div className='py-[1.563rem] flex flex-col justify-between'>
-            <p className='text-center leading-[28px] text-white text-[1.25em]'>
+            <p className='text-center leading-[1.75rem] text-white text-[1.25em]'>
               {music.artist}
             </p>
             <p className='text-center text-gray-300 text-[0.9em]'>
@@ -100,7 +104,7 @@ export function MusicPlayer() {
             <input
               type='range'
               name='duration'
-              min='0'
+              min='1'
               max='100'
               onChange={(e) =>
                 dispatch({
@@ -119,11 +123,15 @@ export function MusicPlayer() {
           </div>
           <div className='container mt-[0.5rem] flex justify-center items-center mx-auto'>
             <p className='text-white text-center font-[400] text-[1rem] mx-2'>
-              {music.price} USD
+              {(
+                Number(music.price.split('$')[1]) +
+                parseInt(value[music.artist.split(' ')[0]])
+              ).toLocaleString()}{' '}
+              USD
             </p>
-            <span className=' bg-green-700 rounded-[8px] px-2 h-[24px] flex items-center'>
-              {value[`${music.artist.split(' ')[0]}`] === 71 ? (
-                <p className='text-white mx-1 h-[1rem] flex items-center font-[400] text-[1rem] border-r-2 line-1 blink'>
+            <span className=' bg-green-700 rounded-[0.5rem] px-2 h-[1.5rem] flex items-center'>
+              {value[`${music.artist.split(' ')[0]}`] == 100 ? (
+                <p className='text-white mx-1 h-[1rem] flex items-center font-[400] pr-[1.7rem] text-[1rem] border-r-2 line-1 blink'>
                   {value[music.artist.split(' ')[0]]}
                 </p>
               ) : (
@@ -134,7 +142,7 @@ export function MusicPlayer() {
             </span>
           </div>
           <span className='flex justify-center mt-[2.5rem]'>
-            <button className='w-[11rem] h-[2.4rem] bg-white  px-6 flex flex-row items-center text-black rounded-[8px] transition-all hover:scale-110'>
+            <button className='w-[11rem] h-[2.4rem] bg-white  px-6 flex flex-row items-center text-black rounded-[0.5rem] transition-all hover:scale-110'>
               <BsFillCartCheckFill className='mr-2 mb-1' />
               Buy Shares
             </button>
