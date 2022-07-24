@@ -1,7 +1,7 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 
-export function OurMech({}) {
+export function OurMech() {
   const { ref, inView } = useInView({
     threshold: 0.8,
     triggerOnce: true,

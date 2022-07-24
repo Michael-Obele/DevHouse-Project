@@ -1,14 +1,10 @@
 import { MusicPlayer } from './MusicPlayer';
 import { StockNav } from './StockNav';
 import React from 'react';
-import { useInView } from 'react-intersection-observer';
 import { OurStockText } from './OurStockText';
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 
 export function OurStocks() {
-  // const { ref, inView } = useInView({
-  //   threshold: 0,
-  // });
   return (
     <section className='relative pb-[8rem]'>
       {/* Typed Character */}

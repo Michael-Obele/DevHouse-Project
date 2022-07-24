@@ -3,12 +3,29 @@ import { MusicList } from './MusicPlayerList';
 import { useInView } from 'react-intersection-observer';
 import { BsFillCartCheckFill } from 'react-icons/bs';
 import style from './index.module.css';
+import shake from './stocksAnimation.module.css';
 
 export function MusicPlayer() {
   const { ref, inView } = useInView({
     threshold: 0,
   });
+  // Loading state for the Buy button.
+  const simulateNetworkRequest = () => {
+    return new Promise((resolve) => setTimeout(resolve, 1500));
+  }; // Simulate a network request.
+  const [isLoading, setLoading] = useState(false);
 
+  useEffect(() => {
+    if (isLoading) {
+      simulateNetworkRequest().then(() => {
+        setLoading(false);
+      });
+    }
+  }, [isLoading]);
+
+  const Load = () => setLoading(true);
+  // End of Loading state for the Buy button.
+  // Last minute Reducer function
   const reducer = (state, action) => {
     switch (action.type) {
       case 'ChangeProgress':
@@ -22,6 +39,7 @@ export function MusicPlayer() {
     Nasty: '45',
   };
   const [value, dispatch] = useReducer(reducer, InitialState);
+  // End of Reducer function
   return (
     <section
       ref={ref}
@@ -63,8 +81,9 @@ export function MusicPlayer() {
           </div>
           <div className='container mt-[0.5rem] flex justify-center items-center mx-auto'>
             <p className='text-white text-center font-[400] text-[1rem] mx-2'>
+              $
               {(
-                Number(MusicList[0].price.split('$')[1]) +
+                Number(MusicList[0].price) +
                 parseInt(value[MusicList[0].artist.split(' ')[0]])
               ).toLocaleString()}{' '}
               USD
@@ -76,7 +95,9 @@ export function MusicPlayer() {
             </span>
           </div>
           <span className='flex justify-center mt-[2.5rem]'>
-            <button className='w-[11rem] h-[2.4rem] bg-white  px-6 flex flex-row items-center text-black rounded-[0.5rem] transition-all hover:scale-110'>
+            <button
+              onClick={Load}
+              className='w-[11rem] h-[2.4rem] bg-white  px-6 flex flex-row items-center text-black rounded-[0.5rem] transition-all hover:scale-110'>
               <BsFillCartCheckFill className='mr-2 mb-1' />
               Buy Shares
             </button>
@@ -123,13 +144,15 @@ export function MusicPlayer() {
           </div>
           <div className='container mt-[0.5rem] flex justify-center items-center mx-auto'>
             <p className='text-white text-center font-[400] text-[1rem] mx-2'>
+              $
               {(
-                Number(music.price.split('$')[1]) +
+                Number(music.price) +
                 parseInt(value[music.artist.split(' ')[0]])
               ).toLocaleString()}{' '}
               USD
             </p>
-            <span className=' bg-green-700 rounded-[0.5rem] px-2 h-[1.5rem] flex items-center'>
+            <span
+              className={`bg-green-700 rounded-[0.5rem] px-2 h-[1.5rem] flex items-center`}>
               {value[`${music.artist.split(' ')[0]}`] == 100 ? (
                 <p className='text-white mx-1 h-[1rem] flex items-center font-[400] pr-[1.7rem] text-[1rem] border-r-2 line-1 blink'>
                   {value[music.artist.split(' ')[0]]}
@@ -141,12 +164,24 @@ export function MusicPlayer() {
               )}
             </span>
           </div>
-          <span className='flex justify-center mt-[2.5rem]'>
-            <button className='w-[11rem] h-[2.4rem] bg-white  px-6 flex flex-row items-center text-black rounded-[0.5rem] transition-all hover:scale-110'>
-              <BsFillCartCheckFill className='mr-2 mb-1' />
-              Buy Shares
-            </button>
-          </span>
+          {isLoading ? (
+            <span className='flex justify-center mt-[2.5rem]'>
+              <button
+                className={`w-[11rem] h-[2.4rem] bg-white  px-6 flex flex-row items-center text-black rounded-[0.5rem] transition-all hover:scale-110 ${shake.shakeLr}`}>
+                <BsFillCartCheckFill className='mr-2 mb-1' />
+                Buy Shares
+              </button>
+            </span>
+          ) : (
+            <span className='flex justify-center mt-[2.5rem]'>
+              <button
+                onClick={Load}
+                className='w-[11rem] h-[2.4rem] bg-white  px-6 flex flex-row items-center text-black rounded-[0.5rem] transition-all hover:scale-110'>
+                <BsFillCartCheckFill className='mr-2 mb-1' />
+                Buy Shares
+              </button>
+            </span>
+          )}
         </div>
       ))}
     </section>

@@ -4,7 +4,7 @@ import fade from './stocksAnimation.module.css';
 import index from './index.module.css';
 import { BsSearch } from 'react-icons/bs';
 
-export function StockNav({}) {
+export function StockNav() {
   const { ref, inView } = useInView({
     threshold: 0,
   });

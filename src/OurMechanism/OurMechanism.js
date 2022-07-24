@@ -4,7 +4,7 @@ import { useInView } from 'react-intersection-observer';
 import { OurMech } from './OurMechText';
 import './slideAnimation.css';
 
-export function OurMechanism({}) {
+export function OurMechanism() {
   const { ref, inView } = useInView({
     threshold: 0,
     triggerOnce: true,

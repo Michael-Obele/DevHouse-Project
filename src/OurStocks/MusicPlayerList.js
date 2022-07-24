@@ -1,4 +1,3 @@
-import React from 'react';
 import Fela from '../Images/Fela.png';
 import Burna from '../Images/Burna.png';
 import NastyC from '../Images/NastyC.png';
@@ -9,7 +8,7 @@ export const MusicList = [
     id: 1,
     artist: 'Fela Kuti',
     name: 'Sorrow, Tears and Blood',
-    price: '$2453',
+    price: '2453',
     image: Fela,
     progress: 71,
   },
@@ -17,7 +16,7 @@ export const MusicList = [
     id: 2,
     artist: 'Burna Boy',
     name: 'Love, Damini',
-    price: '$2873',
+    price: '2873',
     image: Burna,
     progress: 86,
   },
@@ -25,7 +24,7 @@ export const MusicList = [
     id: 3,
     artist: 'Falz',
     name: 'Love, Damini',
-    price: '$2013',
+    price: '2013',
     image: Falz,
     progress: 55,
   },
@@ -33,7 +32,7 @@ export const MusicList = [
     id: 4,
     artist: 'Nasty C',
     name: 'ZULU',
-    price: '$1853',
+    price: '1853',
     image: NastyC,
     progress: 45,
   },
