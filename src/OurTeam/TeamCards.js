@@ -10,7 +10,7 @@ export function TeamCards() {
       {/* Tablet View */}
       <div className='flex lg:hidden flex-col md:flex-row space-y-[40px] md:space-y-0 md:space-x-[32px] items-center justify-center'>
         {mobileArray.map((team) => (
-          <div className='w-[304px] h-[400px] rounded-t-[16px] relative transition-all hover:-translate-y-1 hover:scale-110'>
+          <div className='w-[304px] h-[400px] rounded-t-[16px] relative'>
             <img
               src={team.image}
               alt={`Our ${team.position}, ${team.name}`}
@@ -38,7 +38,7 @@ export function TeamCards() {
       {/* Large Screen View */}
       <div className='lg:flex flex-row space-x-[32px] justify-center hidden '>
         {TeamList.map((team) => (
-          <div className='w-[304px] h-[400px] rounded-t-[16px] relative transition-all hover:-translate-y-1 hover:scale-110'>
+          <div className='w-[304px] h-[400px] rounded-t-[16px] relative'>
             <img
               src={team.image}
               alt={`Our ${team.position}, ${team.name}`}

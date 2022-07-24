@@ -44,7 +44,7 @@ export function MusicPlayer() {
     <section
       ref={ref}
       className='pb-[3.5rem] mt-[2rem] flex flex-col items-center lg:flex-row lg:justify-evenly'>
-      {/* Small Screen Single Column */}
+      {/* Small Screen (Mobile) Single Column */}
       {
         <div
           key={MusicList[0].id}
@@ -105,7 +105,7 @@ export function MusicPlayer() {
         </div>
       }
 
-      {/* Big screens Multiple Columns */}
+      {/* Big screens (md and lg) Multiple Columns */}
       {MusicList.map((music) => (
         <div
           key={music.id}
@@ -164,24 +164,14 @@ export function MusicPlayer() {
               )}
             </span>
           </div>
-          {isLoading ? (
-            <span className='flex justify-center mt-[2.5rem]'>
-              <button
-                className={`w-[11rem] h-[2.4rem] bg-white  px-6 flex flex-row items-center text-black rounded-[0.5rem] transition-all hover:scale-110 ${shake.shakeLr}`}>
-                <BsFillCartCheckFill className='mr-2 mb-1' />
-                Buy Shares
-              </button>
-            </span>
-          ) : (
-            <span className='flex justify-center mt-[2.5rem]'>
-              <button
-                onClick={Load}
-                className='w-[11rem] h-[2.4rem] bg-white  px-6 flex flex-row items-center text-black rounded-[0.5rem] transition-all hover:scale-110'>
-                <BsFillCartCheckFill className='mr-2 mb-1' />
-                Buy Shares
-              </button>
-            </span>
-          )}
+          <span className='flex justify-center mt-[2.5rem]'>
+            <button
+              onClick={Load}
+              className='w-[11rem] h-[2.4rem] bg-white  px-6 flex flex-row items-center text-black rounded-[0.5rem] transition-all hover:scale-110'>
+              <BsFillCartCheckFill className='mr-2 mb-1' />
+              Buy Shares
+            </button>
+          </span>
         </div>
       ))}
     </section>
