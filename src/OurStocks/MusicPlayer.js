@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useReducer, useEffect } from 'react';
 import { MusicList } from './MusicPlayerList';
 import { useInView } from 'react-intersection-observer';
 import { BsFillCartCheckFill } from 'react-icons/bs';
@@ -8,6 +8,20 @@ export function MusicPlayer() {
   const { ref, inView } = useInView({
     threshold: 0,
   });
+
+  const reducer = (state, action) => {
+    switch (action.type) {
+      case 'ChangeProgress':
+        return { ...state, [action.name]: action.value };
+    }
+  };
+  const InitialState = {
+    Fela: '71',
+    Burna: '86',
+    Falz: '55',
+    Nasty: '45',
+  };
+  const [value, dispatch] = useReducer(reducer, InitialState);
   return (
     <section
       ref={ref}
@@ -31,12 +45,18 @@ export function MusicPlayer() {
           <div className='w-full mx-auto'>
             <input
               type='range'
-              min='1'
+              min='0'
               max='100'
-              value={MusicList[0].progress}
+              onChange={(e) =>
+                dispatch({
+                  type: 'ChangeProgress',
+                  name: `${MusicList[0].artist.split(' ')[0]}`,
+                  value: e.target.value,
+                })
+              }
+              defaultValue={value[MusicList[0].artist.split(' ')[0]]}
               className={style.slider}
-              id='myRange'
-              readOnly></input>
+              id='myRange'></input>
             <span className='text-white flex justify-end text-[0.625rem]'>
               max
             </span>
@@ -47,7 +67,7 @@ export function MusicPlayer() {
             </p>
             <span className=' bg-green-700 rounded-[8px] px-2 h-[24px] flex items-center'>
               <p className='text-white mx-2 h-[1rem] flex items-center font-[400] text-[1rem] border-r-2 line-1 blink'>
-                {MusicList[0].progress}
+                {value[MusicList[0].artist.split(' ')[0]]}
               </p>
             </span>
           </div>
@@ -79,12 +99,20 @@ export function MusicPlayer() {
           <div className='w-full mx-auto'>
             <input
               type='range'
-              min='1'
+              name='duration'
+              min='0'
               max='100'
-              value={music.progress}
+              onChange={(e) =>
+                dispatch({
+                  type: 'ChangeProgress',
+                  name: `${music.artist.split(' ')[0]}`,
+                  value: e.target.value,
+                })
+              }
               className={style.slider}
+              defaultValue={value[music.artist.split(' ')[0]]}
               id='myRange'
-              readOnly></input>
+            />
             <span className='text-white flex justify-end text-[0.625rem]'>
               max
             </span>
@@ -94,13 +122,13 @@ export function MusicPlayer() {
               {music.price} USD
             </p>
             <span className=' bg-green-700 rounded-[8px] px-2 h-[24px] flex items-center'>
-              {music.progress === 71 ? (
+              {value[`${music.artist.split(' ')[0]}`] === 71 ? (
                 <p className='text-white mx-1 h-[1rem] flex items-center font-[400] text-[1rem] border-r-2 line-1 blink'>
-                  {music.progress}
+                  {value[music.artist.split(' ')[0]]}
                 </p>
               ) : (
                 <p className='text-white mx-1 h-[1rem] flex items-center font-[400] pr-[1.4375rem] text-[1rem] border-r-2 line-1 blink'>
-                  {music.progress}
+                  {value[music.artist.split(' ')[0]]}
                 </p>
               )}
             </span>

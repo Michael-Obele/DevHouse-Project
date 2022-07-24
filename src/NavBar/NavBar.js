@@ -1,20 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import logo from './logo.png';
+import logo from '../Images/logo.png';
 import animate from './animation.module.css';
 import index from './index.module.css';
-import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import '../btnLoading.css';
 
-export function NavBar({ darkMood, setDarkMood }) {
+export function NavBar() {
   const simulateNetworkRequest = () => {
     return new Promise((resolve) => setTimeout(resolve, 4500));
   }; // Simulate a network request.
   const [isLoading, setLoading] = useState(false);
   const navList = ['Learn more', 'Team', 'Contact us'];
   const [show, setShow] = useState('hidden');
-  const switchMood = () => {
-    darkMood ? setDarkMood(false) : setDarkMood(true);
-  };
 
   useEffect(() => {
     if (isLoading) {
@@ -26,16 +22,13 @@ export function NavBar({ darkMood, setDarkMood }) {
 
   const Load = () => setLoading(true);
 
-  const toggleDarkMode = (checked) => {
-    setDarkMood(checked);
-  };
   return (
-    <div className={darkMood ? 'dark' : ''}>
+    <>
       <nav className='bg-white border-gray-400 px-2 sm:px-4 py-2.5 dark:bg-gray-800 transition-colors delay-[180ms]'>
         <div className='container md:flex md:flex-wrap67 items-center  justify-between  mx-auto'>
-          <div className='flex space-x-4 transition-all hover:scale-110'>
+          <div className='flex space-x-[.5rem] transition-all hover:scale-110'>
             <a href='#' className='flex items-center'>
-              <img src={logo} className='mr-3 h-6 sm:h-9' alt='SpotXLogo' />
+              <img src={logo} className='mr-3 h-6 sm:h-9' alt='SpotX Logo' />
               <span className='self-center text-xl font-semibold whitespace-nowrap dark:text-white'>
                 SpotX
               </span>
@@ -91,16 +84,9 @@ export function NavBar({ darkMood, setDarkMood }) {
                 Connect Wallet
               </button>
             )}
-            <DarkModeSwitch
-              className='cursor-pointer ml-2 my-auto dark:text-green-300'
-              onClick={() => switchMood()}
-              checked={darkMood}
-              onChange={toggleDarkMode}
-              size={40}
-            />
           </div>
         </div>
       </nav>
-    </div>
+    </>
   );
 }

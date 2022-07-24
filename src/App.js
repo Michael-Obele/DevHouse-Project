@@ -1,20 +1,18 @@
+import React from 'react';
 import { OurMechanism } from './OurMechanism/OurMechanism';
-import { OurMech } from './OurMechanism/OurMechText';
 import { Hero } from './Hero_Section/Hero';
-import React, { useEffect, useState } from 'react';
-import './index.css';
-import './typingAnimation.css';
 import { NavBar } from './NavBar/NavBar';
 import { OurStocks } from './OurStocks/OurStocks';
 import OurCommunity from './OurCommunity/OurCommunity';
 import OurTeam from './OurTeam/OurTeam';
+import Footer from './Footer/Footer';
+import './index.css';
+import './typingAnimation.css';
 
 function App() {
-  const [darkMood, setDarkMood] = useState(false);
-
   return (
     <>
-      <NavBar darkMood={darkMood} setDarkMood={setDarkMood} />
+      <NavBar />
       <Hero />
       <section className='bg-[#000812] bg-mech-com'>
         <OurStocks />
@@ -22,6 +20,7 @@ function App() {
         <OurTeam />
         <OurCommunity />
       </section>
+      <Footer />
     </>
   );
 }

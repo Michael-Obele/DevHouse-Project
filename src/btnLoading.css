@@ -1,8 +1,8 @@
 /* Button */
 :root {
   /* variables */
-  --first-color: #000812;
-  --first-color-alt: #020406;
+  --first-color: #00081284;
+  --first-color-alt: #020406ed;
   --text-color: white;
 }
 .buttonLoader {

@@ -43,6 +43,11 @@ body {
     background-repeat: no-repeat;
   }
 }
+.bg-footer {
+  background-image: url(./Images/Rect1.png), url(./Images/Rect2.png);
+  background-repeat: no-repeat;
+  background-position: left 0px bottom 0rem, right 0px bottom 0rem;
+}
 
 /* Background */
 
