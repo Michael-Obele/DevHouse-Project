@@ -1,14 +1,9 @@
 import React, { useState, useReducer, useEffect } from 'react';
 import { MusicList } from './MusicPlayerList';
-import { useInView } from 'react-intersection-observer';
 import { BsFillCartCheckFill } from 'react-icons/bs';
 import style from './index.module.css';
-import shake from './stocksAnimation.module.css';
 
 export function MusicPlayer() {
-  const { ref, inView } = useInView({
-    threshold: 0,
-  });
   // Loading state for the Buy button.
   const simulateNetworkRequest = () => {
     return new Promise((resolve) => setTimeout(resolve, 1500));
@@ -25,11 +20,15 @@ export function MusicPlayer() {
 
   const Load = () => setLoading(true);
   // End of Loading state for the Buy button.
+
+  // State for the Music Player.
   // Last minute Reducer function
   const reducer = (state, action) => {
     switch (action.type) {
       case 'ChangeProgress':
         return { ...state, [action.name]: action.value };
+      default:
+        return state;
     }
   };
   const InitialState = {
@@ -40,10 +39,10 @@ export function MusicPlayer() {
   };
   const [value, dispatch] = useReducer(reducer, InitialState);
   // End of Reducer function
+  // End of State for the Music Player.
+
   return (
-    <section
-      ref={ref}
-      className='pb-[3.5rem] mt-[2rem] flex flex-col items-center lg:flex-row lg:justify-evenly'>
+    <section className='pb-[3.5rem] mt-[2rem] flex flex-col items-center lg:flex-row lg:justify-evenly'>
       {/* Small Screen (Mobile) Single Column */}
       {
         <div
@@ -153,7 +152,7 @@ export function MusicPlayer() {
             </p>
             <span
               className={`bg-green-700 rounded-[0.5rem] px-2 h-[1.5rem] flex items-center`}>
-              {value[`${music.artist.split(' ')[0]}`] == 100 ? (
+              {value[`${music.artist.split(' ')[0]}`] === '100' ? (
                 <p className='text-white mx-1 h-[1rem] flex items-center font-[400] pr-[1.7rem] text-[1rem] border-r-2 line-1 blink'>
                   {value[music.artist.split(' ')[0]]}
                 </p>

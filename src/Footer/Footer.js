@@ -10,10 +10,9 @@ const Footer = () => {
           className='mr-3 h-[38px] w-[45px] sm:h-9'
           alt='SpotX Logo'
         />
-        <h4 className='font-[700] text-[1rem] leading-[1.3662rem] self-center'>
+        <h4 className='font-[700] text-[1rem] leading-[1.3662rem] self-center cursor-pointer'>
           Spot X
         </h4>
-        <a href='#' className='flex items-center'></a>
       </span>
       <p className='text-center font-[400] text-[.6875rem] md:leading-[1rem] '>
         Lörem ipsum od ohet dilogi. Bell trabel, samuligt, ohöbel utom diska.
