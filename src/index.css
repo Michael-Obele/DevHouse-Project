@@ -26,8 +26,8 @@ body {
   .bg-hero {
     background-image: url(./Images/bBox.png), url(./Images/bBox.png),
       url(./Images/bBox.png), url(./Images/hBox.png);
-    background-position: 22.27% 8.5%, right 40% top 28%, right 4.48% bottom 38%,
-      left -2.99% bottom 6.05%;
+    background-position: left 9% top 4.5%, right 40% top 28%,
+      right 4.48% bottom 38%, left -2.99% bottom 6.05%;
     background-repeat: no-repeat;
   }
 }

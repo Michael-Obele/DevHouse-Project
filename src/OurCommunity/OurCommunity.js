@@ -18,15 +18,15 @@ function OurCommunity() {
       <OurCom />
       <div
         ref={ref}
-        className='pt-[4rem] md:px-[3.0625rem] lg:px-[16rem] items-center space-y-[2.5rem] md:space-y-0 flex flex-col md:flex-row md:space-x-[5rem]'>
+        className='items-center mx-auto container justify-center space-y-[2.5rem] md:space-y-0 flex flex-col md:flex-row md:space-x-[5rem]'>
         {communityList.map((item, index) => (
           <div
             key={index}
-            className='bg-[#B9F3CE] w-[16rem] h-[16rem] rounded-[1rem] items-center flex justify-center '>
+            className='bg-[#B9F3CE] w-[18vw] h-[18vw] rounded-[1rem] items-center flex justify-center '>
             <item.SVG
               className={
                 inView
-                  ? `${css.swirlInFwd} cursor-pointer transition-all hover:w-[12rem] hover:h-[12rem]`
+                  ? `${css.swirlInFwd} cursor-pointer transition-all md:w-[12vw] md:h-[12vw]  w-[13vw] h-[13vw] hover:w-[13.5vw] hover:h-[13.5vw]`
                   : 'opacity-0'
               }
             />
