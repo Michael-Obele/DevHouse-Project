@@ -166,7 +166,7 @@ export function MusicPlayer() {
           <span className='flex justify-center mt-[2.5rem]'>
             <button
               onClick={Load}
-              className='w-[11rem] h-[2.4rem] bg-white  px-6 flex flex-row items-center text-black rounded-[0.5rem] transition-all hover:scale-110'>
+              className='w-[11rem] mx-auto h-[2.4rem] bg-white justify-center flex flex-row items-center text-black rounded-[0.5rem] transition-all hover:scale-110'>
               <BsFillCartCheckFill className='mr-2 mb-1' />
               Buy Shares
             </button>
