@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { OurMechanism } from './OurMechanism/OurMechanism';
 import { Hero } from './Hero_Section/Hero';
 import { NavBar } from './NavBar/NavBar';
@@ -10,10 +10,11 @@ import './index.css';
 import './typingAnimation.css';
 
 function App() {
+  const [show, setShow] = useState('hidden');
   return (
     <>
-      <NavBar />
-      <Hero />
+      <NavBar show={show} setShow={setShow} />
+      <Hero show={show} />
       <section className='bg-[#000812] bg-mech-com'>
         <OurStocks />
         <OurMechanism />

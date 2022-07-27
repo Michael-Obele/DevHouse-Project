@@ -4,7 +4,7 @@ import animate from './animation.module.css';
 import index from './index.module.css';
 import '../btnLoading.css';
 
-export function NavBar() {
+export function NavBar({ show, setShow }) {
   const simulateNetworkRequest = () => {
     return new Promise((resolve) => setTimeout(resolve, 4500));
   }; // Simulate a network request.
@@ -21,7 +21,6 @@ export function NavBar() {
   const Load = () => setLoading(true);
 
   const navList = ['Learn more', 'Team', 'Contact us'];
-  const [show, setShow] = useState('hidden');
 
   return (
     <>

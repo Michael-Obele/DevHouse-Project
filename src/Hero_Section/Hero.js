@@ -3,7 +3,7 @@ import { ReactComponent as Image } from './image.svg';
 import fade from './hereAnimation.module.css';
 import '../btnLoading.css';
 
-export function Hero() {
+export function Hero({ show }) {
   const simulateNetworkRequest = () => {
     return new Promise((resolve) => setTimeout(resolve, 4500));
   }; // Simulate a network request.
@@ -20,7 +20,11 @@ export function Hero() {
   return (
     <section
       id='Home'
-      className='bg-hero bg-[#1ed760] pb-[10vh] lg:h-[130vh] relative w-full lg:w-auto'>
+      className={
+        show === 'hidden'
+          ? 'bg-hero bg-[#1ed760] pb-[10vh] lg:h-[130vh] relative w-full lg:w-auto'
+          : 'bg-hero bg-[#1ed760] mt-[35vh] pb-[10vh] lg:h-[130vh] relative w-full lg:w-auto'
+      }>
       <div className='flex flex-col justify-center items-center pt-[80px] lg:block lg:absolute lg:top-[5rem] left-5 lg:left-[3.467vw]'>
         <span className='mb-[50px]'>
           <h1 className='text-[40px] md:text-[64px] font-[700] text-[#2941ab]'>
