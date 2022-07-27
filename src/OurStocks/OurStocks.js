@@ -8,7 +8,7 @@ export function OurStocks() {
   return (
     <section className='relative pb-[8rem]'>
       {/* Typed Character */}
-      <OurStockText />
+      {/* <OurStockText /> */}
       {/* Typed Character */}
       <StockNav />
       <MusicPlayer />
