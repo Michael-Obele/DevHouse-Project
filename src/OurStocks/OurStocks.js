@@ -10,7 +10,7 @@ export function OurStocks() {
       {/* Typed Character */}
       <OurStockText />
       {/* Typed Character */}
-      {/* <StockNav /> */}
+      <StockNav />
       <MusicPlayer />
       <MusicPlayer />
       <div className='container flex flex-row items-center justify-center'>
