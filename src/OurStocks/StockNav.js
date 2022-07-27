@@ -28,7 +28,7 @@ export function StockNav() {
         <ul
           className={
             inView
-              ? `${fade.fadeIn} flex flex-row px-[6rem] text-[1rem] font-bold mt-4 lg:space-x-8 md:mt-0`
+              ? `${fade.fadeIn} flex flex-row px-[4rem] text-[1rem] font-bold mt-4 lg:space-x-8 md:mt-0`
               : 'opacity-0 flex  px-[6rem] text-[1rem] font-bold mt-4 flex-row md:space-x-8 md:mt-0 '
           }>
           <li>
