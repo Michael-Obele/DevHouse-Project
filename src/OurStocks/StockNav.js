@@ -23,7 +23,7 @@ export function StockNav() {
   return (
     <nav
       ref={ref}
-      className='bg-transparent border-gray-400 py-2.5 dark:bg-gray-800  lg:container'>
+      className='bg-transparent border-gray-400 py-2.5 dark:bg-gray-800  lg:container overflow-x-hidden'>
       <div className='w-[40vw] lg:container justify-center flex flex-wrap items-center mx-auto'>
         <ul
           className={
