@@ -87,10 +87,17 @@ export function MusicPlayer() {
               ).toLocaleString()}{' '}
               USD
             </p>
-            <span className=' bg-green-700 rounded-[0.5rem] px-2 h-[1.5rem] flex items-center'>
-              <p className='text-white mx-2 h-[1rem] flex items-center font-[400] text-[1rem] border-r-2 line-1 blink'>
-                {value[MusicList[0].artist.split(' ')[0]]}
-              </p>
+            <span
+              className={`bg-green-700 rounded-[0.5rem] px-2 h-[1.5rem] flex items-center`}>
+              {value[`${MusicList[0].artist.split(' ')[0]}`] === '100' ? (
+                <p className='text-white mx-1 h-[1rem] flex items-center font-[400] pr-[1.7rem] text-[1rem] border-r-2 line-1 blink'>
+                  {value[MusicList[0].artist.split(' ')[0]]}
+                </p>
+              ) : (
+                <p className='text-white mx-1 h-[1rem] flex items-center font-[400] pr-[1.4375rem] text-[1rem] border-r-2 line-1 blink'>
+                  {value[MusicList[0].artist.split(' ')[0]]}
+                </p>
+              )}
             </span>
           </div>
           <span className='flex px-[24.5px] mt-[2.5rem]'>
