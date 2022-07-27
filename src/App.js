@@ -13,8 +13,8 @@ function App() {
   const [show, setShow] = useState('hidden');
   return (
     <>
-      {/* <NavBar show={show} setShow={setShow} /> */}
-      <Hero show={show} />
+      <NavBar show={show} setShow={setShow} />
+      {/* <Hero show={show} /> */}
       <section className='bg-[#000812] bg-mech-com'>
         <OurStocks />
         <OurMechanism />
