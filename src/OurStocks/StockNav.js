@@ -24,7 +24,7 @@ export function StockNav() {
     <nav
       ref={ref}
       className='bg-transparent border-gray-400 py-2.5 dark:bg-gray-800 mx-0 overflow-x-hidden'>
-      <div className='w-[40vw] lg:w-fit justify-center flex flex-wrap items-center'>
+      <div className='w-[40vw] lg:w-fit justify-center flex flex-wrap items-center mx-auto'>
         <ul
           className={
             inView
