@@ -23,7 +23,7 @@ export function Hero({ show }) {
       className={
         show === 'hidden'
           ? 'bg-hero bg-hero bg-[#1ed760] pb-[8vh] sm:h-screen relative w-full lg:w-auto box-border overflow-hidden'
-          : 'bg-hero bg-hero bg-[#1ed760] pb-[8vh] sm:h-screen relative w-full lg:w-auto box-border overflow-hidden mt-[35vh]'
+          : 'bg-hero bg-hero bg-[#1ed760] pb-[8vh] sm:h-screen relative w-full lg:w-auto box-border overflow-hidden mt-[14rem]'
       }>
       <div className='flex flex-col justify-center items-center pt-[8%] lg:block lg:absolute lg:top-[5rem] left-5 lg:left-[3.467vw]'>
         <span className='mb-[6.667vw]'>
