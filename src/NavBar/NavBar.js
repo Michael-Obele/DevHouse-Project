@@ -28,7 +28,11 @@ export function NavBar({ show, setShow }) {
         <div className='container md:flex md:flex-wrap67 items-center  justify-between mx-auto'>
           <div className='w-[13.867vw] flex transition-all md:hover:scale-110'>
             <a href='#' className='flex items-center'>
-              <img src={logo} className='h-6 sm:h-9' alt='SpotX Logo' />
+              <img
+                src={logo}
+                className='h-6 sm:h-9 mr-[8px]'
+                alt='SpotX Logo'
+              />
               <span className='self-center text-xl font-semibold whitespace-nowrap dark:text-white'>
                 SpotX
               </span>
