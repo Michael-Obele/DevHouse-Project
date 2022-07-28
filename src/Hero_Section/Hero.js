@@ -26,7 +26,7 @@ export function Hero({ show }) {
           : 'bg-hero bg-hero bg-[#1ed760] pb-[8vh] sm:h-screen relative w-full lg:w-auto box-border overflow-hidden mt-[14rem]'
       }>
       <div className='flex flex-col justify-center items-center pt-[8%] lg:block lg:absolute lg:top-[5rem] left-5 lg:left-[3.467vw]'>
-        <span className='mb-[6.667vw]'>
+        <span className='mb-[6.667vw] flex flex-col justify-center items-center self-center'>
           <h1 className='text-[40px] md:text-[64px] font-[700] text-[#2941ab]'>
             Listening isn't
           </h1>
