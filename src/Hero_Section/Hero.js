@@ -35,7 +35,7 @@ export function Hero({ show }) {
           </h1>
         </span>
         <div className='bg-[#1ed760] rounded-l-[4px] rounded-r-[4px] border-x-[2px] border-l-[#0e173c] border-r-[#0e173c] mb-[40px] lg:mb-0 lg:border-r-0 border-y-0 box-border h-fit w-[75vw] md:w-[524px] border-4 flex flex-col lg:relative lg:left-[125px]'>
-          <p className='md:text-justify font-[500] lg:font-[400] text-center text-[12px] md:text-[16px] md:px-1 lg:pl-[16px] lg:leading-5 h-[44px]'>
+          <p className='md:text-justify font-[500] lg:font-[400] text-center text-[12px] md:text-[16px] md:px-1 lg:pl-[16px] lg:leading-5'>
             There is more, you can now buy shares of songs from spotify using
             our smarts contracts and that's all you will ever need to begin
           </p>
