@@ -17,11 +17,20 @@ body {
 /* Background */
 
 .bg-hero {
-  background-image: url(./Images/bBox.png), url(./Images/bBox.png),
-    url(./Images/hBox.png);
+  background-image: url(./Images/Rect-sm1.png), url(./Images/Rect-sm2.png),
+    url(./Images/Rect-sm3.png);
   background-position: right 71% top 48%, right 22.2% bottom 30%,
     left -2.99% bottom 6.05%;
   background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .bg-hero {
+    background-image: url(./Images/Rect-md1.png), url(./Images/Rect-md1.png),
+      url(./Images/Rect-md3.png);
+    background-position: right 71% top 48%, right 22.2% bottom 30%,
+      left -2.99% bottom 6.05%;
+    background-repeat: no-repeat;
+  }
 }
 @media (min-width: 1024px) {
   .bg-hero {
