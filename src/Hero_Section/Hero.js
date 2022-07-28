@@ -27,10 +27,10 @@ export function Hero({ show }) {
       }>
       <div className='flex flex-col justify-center items-center pt-[8%] lg:block lg:absolute lg:top-[5rem] left-5 lg:left-[3.467vw]'>
         <span className='mb-[6.667vw] flex flex-col justify-center items-center self-center'>
-          <h1 className='text-[40px] font-[900] lg:font-[700] md:text-[64px] text-[#2941ab]'>
+          <h1 className='text-[40px] font-[1000] lg:font-[700] md:text-[64px] text-[#2941ab]'>
             Listening isn't
           </h1>
-          <h1 className='text-[40px] font-[900] lg:font-[700] md:text-[64px] text-[#2941ab] lg:m-4 lg:ml-[7.3rem]'>
+          <h1 className='text-[40px] font-[1000] lg:font-[700] md:text-[64px] text-[#2941ab] lg:m-4 lg:ml-[7.3rem]'>
             everything now
           </h1>
         </span>
