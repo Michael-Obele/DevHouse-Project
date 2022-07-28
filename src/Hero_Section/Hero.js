@@ -22,8 +22,8 @@ export function Hero({ show }) {
       id='Home'
       className={
         show === 'hidden'
-          ? 'bg-hero bg-[#1ed760] pb-[8vh] sm:h-screen relative w-full lg:w-auto box-border'
-          : 'bg-hero bg-hero bg-[#1ed760] pb-[8vh] sm:h-screen relative w-full lg:w-auto box-border mt-[35vh] overflow-y-clip'
+          ? 'bg-hero bg-hero bg-[#1ed760] pb-[8vh] sm:h-screen relative w-full lg:w-auto box-border overflow-hidden'
+          : 'bg-hero bg-hero bg-[#1ed760] pb-[8vh] sm:h-screen relative w-full lg:w-auto box-border overflow-hidden mt-[35vh]'
       }>
       <div className='flex flex-col justify-center items-center pt-[8%] lg:block lg:absolute lg:top-[5rem] left-5 lg:left-[3.467vw]'>
         <span className='mb-[6.667vw]'>

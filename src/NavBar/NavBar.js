@@ -25,10 +25,10 @@ export function NavBar({ show, setShow }) {
   return (
     <>
       <nav className='bg-white border-gray-400 px-2 sm:px-4 py-2.5 transition-all delay-[180ms] h-[64px]'>
-        <div className='container md:flex md:flex-wrap67 items-center  justify-between  mx-auto'>
-          <div className='w-[13.867vw] lg:mr-[8.533vw] flex transition-all md:hover:scale-110'>
+        <div className='container md:flex md:flex-wrap67 items-center  justify-between mx-auto'>
+          <div className='w-[13.867vw] flex transition-all md:hover:scale-110'>
             <a href='#' className='flex items-center'>
-              <img src={logo} className=' h-6 sm:h-9' alt='SpotX Logo' />
+              <img src={logo} className='h-6 sm:h-9' alt='SpotX Logo' />
               <span className='self-center text-xl font-semibold whitespace-nowrap dark:text-white'>
                 SpotX
               </span>
