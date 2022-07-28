@@ -22,8 +22,8 @@ const Footer = () => {
       <p className='leading-[.9394rem] text-[.6875rem] font-[600] cursor-pointer'>
         © 2022 Spot X | Powered by Spotify
       </p>
-      <div className='rounded-tl-[4rem] bg-[#1ED760] absolute bottom-0 right-0 h-[1.5rem] w-[9vw] md:h-[2rem] md:w-[20vw] lg:h-[3.125rem] lg:w-[41vw]'></div>
-      <div className='rounded-tr-[4rem] bg-[#1ED760] absolute bottom-0 left-0 h-[1.5rem] w-[9vw] md:h-[2rem] md:w-[20vw] lg:h-[3.125rem] lg:w-[41vw]'></div>
+      <div className='rounded-tl-[4rem] bottom-0 right-0 bg-[#1ED760] absolute md:h-[2rem] md:w-[38.4vw] h-[1.5rem] w-[8.0001rem] lg:h-[3.125rem] lg:w-[41vw]'></div>
+      <div className='rounded-tr-[4rem] bottom-0 left-0 bg-[#1ED760] absolute md:h-[2rem] md:w-[38.4vw] h-[1.5rem] w-[8.0001rem] lg:h-[3.125rem] lg:w-[41vw]'></div>
     </footer>
   );
 };
