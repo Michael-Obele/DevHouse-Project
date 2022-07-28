@@ -29,7 +29,7 @@ export function StockNav() {
           className={
             inView
               ? `${fade.fadeIn} flex flex-row px-[4rem] text-[1rem] font-bold mt-4 lg:space-x-8 md:mt-0`
-              : 'opacity-0 flex px-[6rem] text-[1rem] font-bold mt-4 flex-row md:space-x-8 md:mt-0 '
+              : 'opacity-0 flex px-[6rem] text-[1rem] font-bold mt-4 flex-row md:space-x-8 md:mt-0 overflow-x-clip'
           }>
           <li>
             <a
@@ -44,7 +44,7 @@ export function StockNav() {
           </button>
           <input
             list='genre'
-            className={`${index.input} search rounded-[8px] rounded-l-none bg-[#B0B7C0] text-[#0B4B22] lg:hidden`}
+            className={`${index.input} search rounded-[8px] rounded-l-none bg-[#B0B7C0] text-[#0B4B22] lg:hidden w-[12vw]`}
             placeholder='Search Genre'
           />
           <datalist id='genre'>
