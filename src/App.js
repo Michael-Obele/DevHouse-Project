@@ -15,7 +15,7 @@ function App() {
     <>
       <NavBar show={show} setShow={setShow} />
       <Hero show={show} />
-      <section className='bg-[#000812] bg-mech-com'>
+      <section className='bg-[#000812]'>
         <OurStocks />
         <OurMechanism />
         <OurTeam />

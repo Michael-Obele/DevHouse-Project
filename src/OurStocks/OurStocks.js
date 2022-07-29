@@ -3,6 +3,7 @@ import { StockNav } from './StockNav';
 import React from 'react';
 import { OurStockText } from './OurStockText';
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
+import Player from './Player';
 
 export function OurStocks() {
   return (

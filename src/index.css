@@ -15,7 +15,7 @@ body {
 }
 
 /* Background */
-
+/* Hero Page */
 .bg-hero {
   background-image: url(./Images/Rect-sm1.png), url(./Images/Rect-sm2.png),
     url(./Images/Rect-sm3.png);
@@ -42,76 +42,18 @@ body {
   }
 }
 
-@media (min-width: 768px) {
-  .bg-mech-com {
-    background-image: url(./Images/Ellipse1.png), url(./Images/Ellipse2.png),
-      url(./Images/Ellipse1.png), url(./Images/Ellipse2.png),
-      url(./Images/Ellipse1.png), url(./Images/EllipseD.png);
-    background-position: left 0px top 62rem, right 0px top 80rem,
-      left 0px top 98rem, right 0px top 120rem, left 0px top 140rem,
-      right 50% bottom 1rem;
-    background-repeat: no-repeat;
-  }
-}
+/* Footer */
 .bg-footer {
   background-image: url(./Images/Rect1.png), url(./Images/Rect2.png);
   background-repeat: no-repeat;
   background-position: left 0px bottom 0rem, right 0px bottom 0rem;
 }
 
-/* Background */
+/*End of Background */
 
-/* Body CSS */
-
-/* Calc Styles */
-.h1-calc {
-  font-size: calc(24px + (64 - 24) * ((100vw - 300px) / (1600 - 300)));
-}
-.p-calc {
-  font-size: calc(13px + (24 - 13) * ((100vw - 400px) / (1600 - 300)));
-}
-/* Calc Styles */
-/* Body CSS */
-
-#box {
-  box-sizing: border-box;
-
-  /* Auto layout */
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px 64px 0px 45px;
-  gap: 45px;
-
-  width: 16px;
-  height: 30px;
-
-  background: linear-gradient(180deg, #1f3180 0%, rgba(31, 49, 128, 0) 100%);
-  /* Foundation /Green/Normal */
-
-  border-left: 4px solid #1ed760;
-  border-radius: 32px;
-}
-/* Body CSS */
 /* Personal Configs */
 
 .box-g {
   background: linear-gradient(180deg, #1f3180 0%, rgba(31, 49, 128, 0) 100%);
 }
-
-.box-t {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 256px;
-  line-height: 350px;
-
-  background: linear-gradient(180deg, #2941ab 0%, rgba(255, 255, 255, 0) 72.4%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-}
 /* Personal Configs */
-/* Body CSS */

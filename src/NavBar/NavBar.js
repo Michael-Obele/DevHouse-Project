@@ -3,8 +3,11 @@ import logo from '../Images/logo.png';
 import animate from './animation.module.css';
 import index from './index.module.css';
 import '../btnLoading.css';
+import NavModal from './NavModal';
 
 export function NavBar({ show, setShow }) {
+  const [modal, setModal] = useState(false);
+  const [randNo, SetRandNo] = useState(Math.round(Math.random() * 1));
   const simulateNetworkRequest = () => {
     return new Promise((resolve) => setTimeout(resolve, 4500));
   }; // Simulate a network request.
@@ -14,6 +17,8 @@ export function NavBar({ show, setShow }) {
     if (isLoading) {
       simulateNetworkRequest().then(() => {
         setLoading(false);
+        SetRandNo(Math.round(Math.random() * 1));
+        setModal(true);
       });
     }
   }, [isLoading]);
@@ -90,6 +95,7 @@ export function NavBar({ show, setShow }) {
             )}
           </div>
         </div>
+        <NavModal modal={modal} setModal={setModal} randNo={randNo} />
       </nav>
     </>
   );
