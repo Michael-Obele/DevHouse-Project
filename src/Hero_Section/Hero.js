@@ -5,7 +5,7 @@ import '../btnLoading.css';
 import HeroModal from './HeroModal';
 
 export function Hero({ show }) {
-  const [randNo, SetRandNo] = useState(Math.round(Math.random() * 1));
+  const [randNo, setRandNo] = useState(Math.round(Math.random() * 1));
   const [modal, setModal] = useState(false);
   const simulateNetworkRequest = () => {
     return new Promise((resolve) => setTimeout(resolve, 4500));
@@ -15,7 +15,7 @@ export function Hero({ show }) {
     if (isLoading) {
       simulateNetworkRequest().then(() => {
         setLoading(false);
-        SetRandNo(Math.round(Math.random() * 1));
+        setRandNo(Math.round(Math.random() * 1));
         setModal(true);
       });
     }

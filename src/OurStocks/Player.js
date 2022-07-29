@@ -8,7 +8,7 @@ const Player = ({
   name,
   progress,
   price,
-  SetRandNo,
+  setRandNo,
   setModal,
 }) => {
   // Loading state for the Buy button.
@@ -21,7 +21,7 @@ const Player = ({
     if (isLoading) {
       simulateNetworkRequest().then(() => {
         setLoading(false);
-        SetRandNo(Math.round(Math.random() * 1));
+        setRandNo(Math.round(Math.random() * 1));
         setModal(true);
       });
     }

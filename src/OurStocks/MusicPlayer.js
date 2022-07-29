@@ -4,7 +4,7 @@ import Player from './Player';
 import StockModal from './StockModal';
 
 export function MusicPlayer() {
-  const [randNo, SetRandNo] = useState(Math.round(Math.random() * 1));
+  const [randNo, setRandNo] = useState(Math.round(Math.random() * 1));
   const [modal, setModal] = useState(false);
   return (
     <>
@@ -17,8 +17,8 @@ export function MusicPlayer() {
             name={music.name}
             progress={music.progress}
             price={music.price}
-            SetRandNo={SetRandNo}
-              setModal={setModal}
+            setRandNo={setRandNo}
+            setModal={setModal}
           />
         ))}
         <div className='hidden md:block lg:hidden'>
@@ -29,15 +29,14 @@ export function MusicPlayer() {
               name={music.name}
               progress={music.progress}
               price={music.price}
-              SetRandNo={SetRandNo}
+              setRandNo={setRandNo}
               setModal={setModal}
             />
           ))}
         </div>
       </section>
-
       {/* Big screens (Laptop) Multiple Columns  */}
-      <section className=' hidden pb-[3.5rem] mt-[2rem] lg:flex flex-col items-center lg:flex-row lg:justify-evenly'>
+      <section className=' hidden pb-[3.5rem] mt-[2rem] lg:flex items-center lg:flex-row lg:justify-evenly'>
         {MusicList.map((music) => (
           <Player
             image={music.image}
@@ -45,7 +44,7 @@ export function MusicPlayer() {
             name={music.name}
             progress={music.progress}
             price={music.price}
-            SetRandNo={SetRandNo}
+            setRandNo={setRandNo}
             setModal={setModal}
           />
         ))}

@@ -1,19 +1,8 @@
 import React from 'react';
 import style from './Modal.module.css';
+import { GoAlert, GoCheck } from 'react-icons/go';
 
 const NavModal = ({ modal, setModal, randNo }) => {
-  const alert = `<lord-icon
-    src="https://cdn.lordicon.com/otyynlki.json"
-    trigger="loop"
-    delay="1000"
-    style="width:30px;height:30px">
-</lord-icon>`;
-  const success = `<lord-icon
-    src="https://cdn.lordicon.com/hjeefwhm.json"
-    trigger="loop"
-    delay="1000"
-    style="width:30px;height:30px">
-</lord-icon>`;
   return (
     <>
       {randNo === 0 ? (
@@ -25,14 +14,14 @@ const NavModal = ({ modal, setModal, randNo }) => {
               className={`${style.modalClose} text-[25px]`}>
               &times;
             </a>
-            <div className='flex flex-row space-x-3 text-xl mt-5'>
-              <div dangerouslySetInnerHTML={{ __html: alert }} />
-              <h1>Error</h1>
+            <div className='flex flex-row space-x-3 items-center text-[24px] mt-5'>
+              <GoAlert className=' text-red-700 ' />
+              <h1 className=' font-bold'>Error</h1>
             </div>
             <span className='flex justify-center mt-5'>
               <button
                 onClick={() => setModal(false)}
-                className='text-black bg-red-700 px-2 rounded-sm'>
+                className='text-black bg-red-700 px-4 py-2 rounded-sm'>
                 Try Again
               </button>
             </span>
@@ -47,14 +36,14 @@ const NavModal = ({ modal, setModal, randNo }) => {
               className={`${style.modalClose} text-[25px]`}>
               &times;
             </a>
-            <div className='flex flex-row space-x-3 text-xl mt-5'>
-              <div dangerouslySetInnerHTML={{ __html: success }} />
-              <h1>Connected</h1>
+            <div className='flex flex-row space-x-3 items-center text-[24px] mt-5'>
+              <GoCheck className=' text-green-700 ' />
+              <h1 className=' font-bold'>Connected</h1>
             </div>
             <span className='flex justify-center mt-5'>
               <button
                 onClick={() => setModal(false)}
-                className='text-black bg-green-700 px-2 rounded-sm'>
+                className='text-black bg-green-700 px-4 py-2 rounded-sm'>
                 Done
               </button>
             </span>
