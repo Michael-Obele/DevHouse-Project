@@ -27,6 +27,8 @@ export function MusicPlayer() {
               name={music.name}
               progress={music.progress}
               price={music.price}
+              SetRandNo={SetRandNo}
+              setModal={setModal}
             />
           ))}
         </div>
