@@ -76,14 +76,14 @@ const Player = ({
           {!isLoading ? (
             <button
               onClick={Load}
-              className='w-[11rem] mx-auto h-[2.4rem] bg-white justify-center flex flex-row items-center text-black rounded-[0.5rem] transition-all hover:scale-110'>
+              className='w-[11rem] mx-auto h-[2.4rem] bg-white justify-center flex flex-row items-center text-black rounded-[0.5rem] transition-all md:hover:scale-110'>
               <BsFillCartCheckFill className='mr-2 mb-1' />
               Buy Shares
             </button>
           ) : (
             <button
               role='status'
-              className='flex flex-row w-[11rem] mx-auto h-[2.4rem] bg-white justify-center items-center text-black rounded-[0.5rem] transition-all hover:scale-110'>
+              className='flex flex-row w-[11rem] mx-auto h-[2.4rem] bg-white justify-center items-center text-black rounded-[0.5rem] cursor-wait transition-all md:hover:scale-110'>
               <svg
                 aria-hidden='true'
                 class='mr-2 w-4 h-4 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600'
