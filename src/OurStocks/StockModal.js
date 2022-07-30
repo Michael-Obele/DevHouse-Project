@@ -8,20 +8,19 @@ const StockModal = ({ modal, setModal, randNo }) => {
       {randNo === 0 ? (
         <div className={modal ? style.modalShow : style.modal}>
           <div className={style.modalContent}>
-            <a
-              href='#'
+            <span
               onClick={() => setModal(false)}
-              className={`${style.modalClose} text-[25px]`}>
+              className={`${style.modalClose} text-[25px] cursor-pointer`}>
               &times;
-            </a>
+            </span>
             <div className='flex flex-row space-x-3 text-center justify-center items-center text-[24px] mt-5'>
-              <GoAlert size={25} className='font-bold text-red-600 ' />
+              <GoAlert size={25} className='font-bold text-[#F84F31] ' />
               <h1 className=' font-bold'>Transaction Failed</h1>
             </div>
             <span className='flex justify-center mt-5'>
               <button
                 onClick={() => setModal(false)}
-                className='text-[#000812] bg-red-600 px-4 py-2 rounded-sm'>
+                className='text-white bg-[#F84F31] px-4 py-2 rounded-[8px]'>
                 Try Again
               </button>
             </span>
@@ -30,20 +29,19 @@ const StockModal = ({ modal, setModal, randNo }) => {
       ) : (
         <div className={modal ? style.modalShow : style.modal}>
           <div className={style.modalContent}>
-            <a
-              href='#'
+            <span
               onClick={() => setModal(false)}
-              className={`${style.modalClose} text-[25px]`}>
+              className={`${style.modalClose} text-[25px] cursor-pointer`}>
               &times;
-            </a>
+            </span>
             <div className='flex flex-row space-x-3 text-center justify-center items-center text-[24px] mt-5'>
-              <GoCheck className=' text-green-700 ' />
+              <GoCheck className=' text-[#23C552] ' />
               <h1 className=' font-bold'>Transaction Success</h1>
             </div>
             <span className='flex justify-center mt-5'>
               <button
                 onClick={() => setModal(false)}
-                className='text-[#000812] bg-green-700 px-4 py-2 rounded-sm'>
+                className='text-white bg-[#23C552] px-4 py-2 rounded-[8px]'>
                 Done
               </button>
             </span>
