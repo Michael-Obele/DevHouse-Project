@@ -6,8 +6,8 @@ const Info = ({ divClassA, divClassB, image1, h2, p, image2 }) => {
     threshold: 0.7,
     triggerOnce: true,
   });
-  const SVG1 = image1;
-  const SVG2 = image2;
+  const SVG1 = image1,
+    SVG2 = image2;
   return (
     <>
       <div ref={ref} className={inView ? divClassA : divClassB}>
