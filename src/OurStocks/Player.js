@@ -86,7 +86,7 @@ const Player = ({
               className='flex flex-row w-[11rem] mx-auto h-[2.4rem] bg-white justify-center items-center text-black rounded-[0.5rem] cursor-wait transition-all md:hover:scale-110'>
               <svg
                 aria-hidden='true'
-                class='mr-2 w-4 h-4 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600'
+                class='mr-2 w-4 h-4 text-gray-200 animate-spin fill-black'
                 viewBox='0 0 100 101'
                 fill='none'
                 xmlns='http://www.w3.org/2000/svg'>
