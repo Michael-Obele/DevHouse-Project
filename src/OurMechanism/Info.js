@@ -3,7 +3,7 @@ import { useInView } from 'react-intersection-observer';
 
 const Info = ({ divClassA, divClassB, image1, h2, p, image2 }) => {
   const { ref, inView } = useInView({
-    threshold: 0.7,
+    threshold: 0.5,
     triggerOnce: true,
   });
   const SVG1 = image1,
