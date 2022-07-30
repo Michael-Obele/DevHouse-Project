@@ -7,7 +7,7 @@ import Player from './Player';
 
 export function OurStocks() {
   return (
-    <section className='relative pb-[8rem]'>
+    <section id='Stocks' className='relative pb-[8rem]'>
       {/* Typed Character */}
       <OurStockText />
       {/* Typed Character */}

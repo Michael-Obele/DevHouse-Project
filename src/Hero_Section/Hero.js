@@ -1,28 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { ReactComponent as Image } from './image.svg';
-import fade from './hereAnimation.module.css';
-import '../btnLoading.css';
-import HeroModal from './HeroModal';
+import fade from './heroAnimation.module.css';
 
 export function Hero({ show }) {
-  const [randNo, setRandNo] = useState(Math.round(Math.random() * 1));
-  const [modal, setModal] = useState(false);
-  const simulateNetworkRequest = () => {
-    return new Promise((resolve) => setTimeout(resolve, 4500));
-  }; // Simulate a network request.
-  const [isLoading, setLoading] = useState(false);
-  useEffect(() => {
-    if (isLoading) {
-      simulateNetworkRequest().then(() => {
-        setLoading(false);
-        setRandNo(Math.round(Math.random() * 1));
-        setModal(true);
-      });
-    }
-  }, [isLoading]);
-
-  const Load = () => setLoading(true);
-
   return (
     <section
       id='Home'
@@ -46,23 +26,15 @@ export function Hero({ show }) {
             our smarts contracts and that's all you will ever need to begin
           </p>
         </div>
-
         <Image
           className={`${fade.fadeIn} w-[135.84px] h-[256px] mb-[9.333vw] lg:w-[364px] lg:h-[686px] lg:relative lg:bottom-[420px] lg:left-[61vw] xl:left-[52vw] z-[4]`}
         />
-        {isLoading ? (
-          <button className='bg-[#000812] font-bold rounded-[8px] border-transparent px-[2rem] py-[1rem] box-border h-fit w-fit relative lg:left-[260px] lg:bottom-[750px] border-4 text-white z-[2] transition-all md:hover:scale-110 buttonLoader'>
-            <span className='z-[2]'>Exploring Shares Now</span>
-          </button>
-        ) : (
-          <button
-            onClick={Load}
-            className='bg-[#000812] font-bold rounded-[8px] border-transparent px-[2rem] py-[1rem] box-border h-fit w-fit relative lg:left-[260px] lg:bottom-[750px] border-4 text-white z-[2] transition-all md:hover:scale-110'>
+        <a href='#Stocks'>
+          <button className='bg-[#000812] font-bold rounded-[8px] border-transparent px-[2rem] py-[1rem] box-border h-fit w-fit relative lg:left-[260px] lg:bottom-[750px] border-4 text-white z-[2] transition-all md:hover:scale-110'>
             Explore Shares Now
           </button>
-        )}
+        </a>
       </div>
-      <HeroModal modal={modal} setModal={setModal} randNo={randNo} />
     </section>
   );
 }

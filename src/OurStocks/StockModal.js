@@ -14,14 +14,14 @@ const StockModal = ({ modal, setModal, randNo }) => {
               className={`${style.modalClose} text-[25px]`}>
               &times;
             </a>
-            <div className='flex flex-row space-x-3 items-center text-[24px] mt-5'>
-              <GoAlert className=' text-red-700 ' />
+            <div className='flex flex-row space-x-3 text-center justify-center items-center text-[24px] mt-5'>
+              <GoAlert size={25} className='font-bold text-red-600 ' />
               <h1 className=' font-bold'>Transaction Failed</h1>
             </div>
             <span className='flex justify-center mt-5'>
               <button
                 onClick={() => setModal(false)}
-                className='text-black bg-red-700 px-4 py-2 rounded-sm'>
+                className='text-[#000812] bg-red-600 px-4 py-2 rounded-sm'>
                 Try Again
               </button>
             </span>
@@ -36,14 +36,14 @@ const StockModal = ({ modal, setModal, randNo }) => {
               className={`${style.modalClose} text-[25px]`}>
               &times;
             </a>
-            <div className='flex flex-row space-x-3 items-center text-[24px] mt-5'>
+            <div className='flex flex-row space-x-3 text-center justify-center items-center text-[24px] mt-5'>
               <GoCheck className=' text-green-700 ' />
               <h1 className=' font-bold'>Transaction Success</h1>
             </div>
             <span className='flex justify-center mt-5'>
               <button
                 onClick={() => setModal(false)}
-                className='text-black bg-green-700 px-4 py-2 rounded-sm'>
+                className='text-[#000812] bg-green-700 px-4 py-2 rounded-sm'>
                 Done
               </button>
             </span>
