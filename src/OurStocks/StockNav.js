@@ -44,7 +44,7 @@ export function StockNav() {
           </button>
           <input
             list='genre'
-            className={`${index.input} search rounded-[8px] rounded-l-none bg-[#B0B7C0] text-[#0B4B22] lg:hidden w-[12vw]`}
+            className={`${index.input} search rounded-[8px] rounded-l-none bg-[#B0B7C0] text-[#0B4B22] lg:hidden w-[25vw]`}
             placeholder='Search Genre'
           />
           <datalist id='genre'>
