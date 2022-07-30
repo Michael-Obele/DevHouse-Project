@@ -23,7 +23,7 @@ export const MusicList = [
   {
     id: 3,
     artist: 'Falz',
-    name: 'Love, Damini',
+    name: '27',
     price: '2013',
     image: Falz,
     progress: 55,
