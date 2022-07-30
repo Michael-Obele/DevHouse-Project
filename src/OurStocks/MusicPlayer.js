@@ -12,6 +12,7 @@ export function MusicPlayer() {
       <section className=' lg:hidden pb-[3.5rem] mt-[2rem] flex flex-row items-center lg:flex-row justify-evenly'>
         {MusicList.slice(0, 1).map((music) => (
           <Player
+            key={music.progress}
             image={music.image}
             artist={music.artist}
             name={music.name}
@@ -24,6 +25,7 @@ export function MusicPlayer() {
         <div className='hidden md:block lg:hidden'>
           {MusicList.slice(1, 2).map((music) => (
             <Player
+              key={music.progress}
               image={music.image}
               artist={music.artist}
               name={music.name}
@@ -39,6 +41,7 @@ export function MusicPlayer() {
       <section className=' hidden pb-[3.5rem] mt-[2rem] lg:flex items-center lg:flex-row lg:justify-evenly'>
         {MusicList.map((music) => (
           <Player
+            key={music.progress}
             image={music.image}
             artist={music.artist}
             name={music.name}
