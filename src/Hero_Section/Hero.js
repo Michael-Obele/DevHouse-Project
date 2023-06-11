@@ -29,11 +29,6 @@ export function Hero({ show }) {
         <Image
           className={`${fade.fadeIn} w-[135.84px] h-[256px] mb-[9.333vw] lg:w-[364px] lg:h-[686px] lg:relative lg:bottom-[420px] lg:left-[61vw] xl:left-[52vw] z-[4]`}
         />
-        <a href='#Stocks'>
-          <button className='bg-[#000812] font-bold rounded-[8px] border-transparent px-[2rem] py-[1rem] box-border h-fit w-fit relative lg:left-[260px] lg:bottom-[750px] border-4 text-white z-[2] transition-all md:hover:scale-110'>
-            Explore Shares Now
-          </button>
-        </a>
       </div>
     </section>
   );
