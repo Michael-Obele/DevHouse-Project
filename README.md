@@ -1,35 +1,54 @@
 # The Dev House Project
 
-<hr/>
 
-# Live version
+## Live Version
 
-This project can be seen on [This page](https://devhouse-project.netlify.app/)
+Experience the deployed version of this project at: This page: [https://devhouse-project.netlify.app/](https://devhouse-project.netlify.app/)
 
-<hr/>
 
-# Project Description
+## Project Description
 
-This project is a Demo of a web3 app where
+This project is a **React.js** web application demonstrating a **decentralized music ownership** concept. Users can acquire shares of songs hosted on platforms like Spotify, with the collected funds used for advertising.
 
-1. People can buy shares of songs from spotify
-1. The money collected is used for advertisement
-1. Information on $8,000 generating 10 BILLION YouTube impressions
-1. Once spotify + apple pays for streams the payment is distributed to a smart contract
-1. Smart contract will pay out share holders
-<hr/>
+**Key Functionalities:**
 
-# How to Install and Run the Project
+* Purchase shares of songs from a simulated marketplace.
+* Utilize the collected funds for promotional purposes (placeholder information about $8,000 generating 10 BILLION YouTube impressions).
+* Simulate music streaming revenue from services like Spotify and Apple Music.
+* Distribute streaming royalties proportionally to shareholders through a smart contract (smart contract functionality not currently implemented).
 
-### `npm start`
+## Development and Deployment
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This project leverages React.js, a popular JavaScript library for building user interfaces. 
 
-### `npm run build`
+### Running the Project Locally:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**1. Installation:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   Begin by cloning the project repository and installing its dependencies:
+
+   ```bash
+   git clone https://github.com/Michael-Obele/DevHouse-Project.git
+   cd the-dev-house-project
+   npm install
+   ```
+
+**2. Development Mode:**
+
+   Start the development server to view and make changes to the project in real-time:
+
+   ```bash
+   npm start
+   ```
+
+   This will typically launch the application at `http://localhost:3000` in your web browser.
+
+**3. Production Build:**
+
+   To create an optimized build suitable for deployment, run the following command:
+
+   ```bash
+   npm run build
+   ```
+
+   This generates a production-ready build within the `build` folder.
